@@ -57,15 +57,24 @@ def explore_nc(input_json):
         sys.exit(f'Error with the input {input_json}')
 
     json_dict = {}
-    global_attr = {}
 
+    #  dimensions
+    dims = {}
+    with netCDF4.Dataset(nc_file) as nc:
+        for dim in nc.dimensions:
+            dims[nc.dimensions[dim].name] = {'size': nc.dimensions[dim].size}
+    json_dict['dimensions'] = dims
+
+    #  global attributes
+    global_attr = {}
     with netCDF4.Dataset(nc_file) as nc:
         for gl_att in nc.ncattrs():
-            print(gl_att, nc.getncattr(gl_att))
-            global_attr[gl_att] = nc.getncattr(gl_att)
-            print(global_attr[gl_att])
-
+            attribute = nc.getncattr(gl_att)
+            type_attr = type(attribute).__name__
+            global_attr[gl_att] = attribute
     json_dict['global attributes'] = global_attr
+
+    #  write json file
     with open(json_file, 'w') as file:
         json.dump(json_dict, file, indent=4, cls=MyEncoder)
 
