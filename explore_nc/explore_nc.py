@@ -34,6 +34,22 @@ class MyEncoder(json.JSONEncoder):
         else:
             return super(MyEncoder, self).default(obj)
 
+class DictEncoder(json.JSONEncoder):
+        def default(self, o):
+            return o.__dict__
+
+def to_json(obj):
+    if isinstance(obj, numpy.integer):
+        return int(obj)
+    elif isinstance(obj, numpy.floating):
+        return float(obj)
+    elif isinstance(obj, numpy.ndarray):
+        return obj.tolist()
+    else:
+        return obj
+
+
+
 
 def explore_nc(input_json):
     """
@@ -59,24 +75,27 @@ def explore_nc(input_json):
     json_dict = {}
 
     #  dimensions
-    dims = {}
+    dims = []
     with netCDF4.Dataset(nc_file) as nc:
         for dim in nc.dimensions:
-            dims[nc.dimensions[dim].name] = {'size': nc.dimensions[dim].size}
+            dic_prov = {'name': nc.dimensions[dim].name, 'size': nc.dimensions[dim].size}
+            dims.append(dic_prov)
     json_dict['dimensions'] = dims
 
     #  global attributes
-    global_attr = {}
+    global_attr = []
     with netCDF4.Dataset(nc_file) as nc:
         for gl_att in nc.ncattrs():
             attribute = nc.getncattr(gl_att)
             type_attr = type(attribute).__name__
-            global_attr[gl_att] = attribute
+            dic_prov = {'name': gl_att, 'value': to_json(attribute), 'type': type_attr}
+            global_attr.append(dic_prov)
+
     json_dict['global attributes'] = global_attr
 
     #  write json file
     with open(json_file, 'w') as file:
-        json.dump(json_dict, file, indent=4, cls=MyEncoder)
+        json.dump(json_dict, file, indent=2)
 
 
 if __name__ == '__main__':
