@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 """
-**explore_nc.py**
+**nc_struc_to_json.py**
 
-* *Purpose:* Read a netcdf
+* *Purpose:* Read a netcdf and return a json file with the structure
 
 * *python version:* 3.8
 * *author:* Pedro Montero
@@ -23,38 +23,28 @@ from collections import OrderedDict
 import netCDF4
 
 
-class MyEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, numpy.integer):
-            return int(obj)
-        elif isinstance(obj, numpy.floating):
-            return float(obj)
-        elif isinstance(obj, numpy.ndarray):
-            return obj.tolist()
-        else:
-            return super(MyEncoder, self).default(obj)
-
-class DictEncoder(json.JSONEncoder):
-        def default(self, o):
-            return o.__dict__
-
 def to_json(obj):
+    """
+    Transform numpy data type to a json compatible datatype
+    :param obj: The object whose datatype will be converted
+    :return:
+    """
     if isinstance(obj, numpy.integer):
         return int(obj)
     elif isinstance(obj, numpy.floating):
         return float(obj)
     elif isinstance(obj, numpy.ndarray):
         return obj.tolist()
+    elif isinstance(obj, bytes):
+        return str(obj)
     else:
         return obj
 
 
-
-
-def explore_nc(input_json):
+def nc_struct_to_json(input_json):
     """
-    read a nc and return variables names and attributes
-    :param input_json:
+    Read a nc and save its structure in a json file
+    :param input_json: name of a json file with the options
     :return:
     """
     try:
@@ -93,11 +83,39 @@ def explore_nc(input_json):
 
     json_dict['global attributes'] = global_attr
 
+    # variables
+    variables = []
+    with netCDF4.Dataset(nc_file) as nc:
+        for var_name in nc.variables:
+            var = nc.variables[var_name]
+
+            # dimensions of a variable
+            dimensions = []
+            for i, dimension in enumerate(var.dimensions):
+                dimensions.append({'name': dimension,
+                                   'value': var.shape[i]})
+
+            # attributes of a variable
+            attributes = []
+            for v_attr in var.ncattrs():
+
+                attr = var.getncattr(v_attr)
+                attributes.append({'name': v_attr,
+                                   'value': to_json(attr),
+                                   'type': type(attr).__name__})
+            variable = {'name': var_name,
+                        'type': str(var.datatype),
+                        'dimensions': dimensions,
+                        'attributes': attributes}
+            variables.append(variable)
+
+    json_dict['variables'] = variables
+
     #  write json file
     with open(json_file, 'w') as file:
-        json.dump(json_dict, file, indent=2)
+        json.dump(json_dict, file, indent=4)
 
 
 if __name__ == '__main__':
-    input_json = 'explore_nc.json'
-    explore_nc(input_json)
+    input_json = 'nc_struct_to_json.json'
+    nc_struct_to_json(input_json)
