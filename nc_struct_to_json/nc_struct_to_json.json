@@ -1,0 +1,4 @@
+{
+  "nc_file": "../data/in/IR_WS_MO_6100430_20201229.nc",
+  "json_file":  "../data/out/nc_header.json"
+}
