@@ -11,8 +11,8 @@
 * *license:* INTECMAR
 * *requires:*
 * *date:* 2020/12/07
-* *version:* 0.0.5
-* *date version* 2020/12/10
+* *version:* 1.0.0
+* *date version* 2021/01/04
 
 """
 import sys
