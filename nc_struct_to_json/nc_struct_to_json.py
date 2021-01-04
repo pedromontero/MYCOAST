@@ -92,8 +92,7 @@ def nc_struct_to_json(input_json):
             # dimensions of a variable
             dimensions = []
             for i, dimension in enumerate(var.dimensions):
-                dimensions.append({'name': dimension,
-                                   'value': var.shape[i]})
+                dimensions.append(dimension)
 
             # attributes of a variable
             attributes = []
