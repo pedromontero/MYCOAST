@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="Project MyCOAST starts with dir_structure">
-      <change afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="write dimensions of a variable as a raw list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +49,7 @@
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\dir_structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.json_struct_to_nc">
+  <component name="RunManager" selected="Python.nc_struct_to_json">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.json_struct_to_nc" />
         <item itemvalue="Python.nc_struct_to_json" />
+        <item itemvalue="Python.json_struct_to_nc" />
         <item itemvalue="Python.dir_structure" />
         <item itemvalue="Python.dir_structure" />
       </list>
@@ -160,7 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609251153514</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="json_struct_to_nc.py can write dimensions">
+      <created>1609757357092</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609757357092</updated>
+    </task>
+    <task id="LOCAL-00003" summary="write dimensions of a variable as a raw list">
+      <created>1609780970719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609780970719</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +190,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project MyCOAST starts with dir_structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project MyCOAST starts with dir_structure" />
+    <MESSAGE value="json_struct_to_nc.py can write dimensions" />
+    <MESSAGE value="write dimensions of a variable as a raw list" />
+    <option name="LAST_COMMIT_MESSAGE" value="write dimensions of a variable as a raw list" />
   </component>
 </project>
