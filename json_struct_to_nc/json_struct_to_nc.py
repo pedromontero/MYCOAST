@@ -50,8 +50,31 @@ def json_struc_to_nc(input_json):
 
     with netCDF4.Dataset(nc_file, "w", format="NETCDF4") as nc:  # TODO: tipo de netcdf debe de ser leido y no impuesto
         for dimension in json_data['dimensions']:
-            print(dimension['name'], dimension['size'])
+
             nc.createDimension(dimension['name'], dimension['size'])
+        for gl_att in json_data['global attributes']:
+
+            nc.setncattr(gl_att['name'], gl_att['value'])
+        for var in json_data['variables']:
+            print('....', var['name'], var['type'], (* var['dimensions'],))
+            fill_value = None
+            for attr_var in var['attributes']:
+                if attr_var['name'] == '_FillValue':
+                    fill_value = attr_var['value']
+
+            nc_var = nc.createVariable(var['name'],
+                                       var['type'],
+                                       (* var['dimensions'],),
+                                       fill_value=fill_value)
+
+            for attr_var in var['attributes']:
+                print(attr_var['name'], attr_var['value'])
+                if attr_var['name'] != '_FillValue':
+                    if attr_var['type'] == 'int8':
+                        attr_var['value'] = numpy.int8(attr_var['value'])
+                    nc_var.setncattr(attr_var['name'], attr_var['value'])
+
+
 
 
 
