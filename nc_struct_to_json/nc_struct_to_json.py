@@ -22,6 +22,14 @@ import numpy
 from collections import OrderedDict
 import netCDF4
 
+ctype = {
+    'float64': 'f8',
+    'float32': 'f4',
+    'int32': 'i4',
+    'int16': 'i2',
+    'int8': 'i1',
+    '|S1': 'S1',
+}
 
 def to_json(obj):
     """
@@ -88,7 +96,7 @@ def nc_struct_to_json(input_json):
     with netCDF4.Dataset(nc_file) as nc:
         for var_name in nc.variables:
             var = nc.variables[var_name]
-
+            print(var_name, ctype[str(var.datatype)])
             # dimensions of a variable
             dimensions = []
             for i, dimension in enumerate(var.dimensions):
@@ -97,13 +105,15 @@ def nc_struct_to_json(input_json):
             # attributes of a variable
             attributes = []
             for v_attr in var.ncattrs():
-
                 attr = var.getncattr(v_attr)
-                attributes.append({'name': v_attr,
-                                   'value': to_json(attr),
-                                   'type': type(attr).__name__})
+                print('------------ ', v_attr, attr, type(attr).__name__)
+                att_dict = {'name': v_attr, 'value': to_json(attr), 'type': type(attr).__name__}
+                if type(attr).__name__ == 'ndarray':
+                    att_dict['type_element'] = str(attr.dtype)
+                attributes.append(att_dict)
+
             variable = {'name': var_name,
-                        'type': str(var.datatype),
+                        'type': ctype[str(var.dtype)],
                         'dimensions': dimensions,
                         'attributes': attributes}
             variables.append(variable)
