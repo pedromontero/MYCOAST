@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-**nc_struc_to_json.py**
+**nc_struct_to_json.py**
 
 * *Purpose:* Read a netcdf and return a json file with the structure
 
@@ -12,7 +12,7 @@
 * *requires:*
 * *date:* 2020/12/07
 * *version:* 1.0.0
-* *date version* 2021/01/04
+* *date version* 2021/01/07
 
 """
 import sys
