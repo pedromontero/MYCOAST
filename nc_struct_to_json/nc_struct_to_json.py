@@ -98,7 +98,6 @@ def nc_struct_to_json(input_json):
         for var_name in nc.variables:
             fill_value = None
             var = nc.variables[var_name]
-            print(var_name, ctype[str(var.datatype)])
             # dimensions of a variable
             dimensions = []
             for i, dimension in enumerate(var.dimensions):
@@ -108,7 +107,6 @@ def nc_struct_to_json(input_json):
             attributes = []
             for v_attr in var.ncattrs():
                 attr = var.getncattr(v_attr)
-                print('------------ ', v_attr, attr, type(attr).__name__, type(attr),to_json(attr))
                 if v_attr == '_FillValue':
                     fill_value = to_json(attr)
                 else:
@@ -117,17 +115,11 @@ def nc_struct_to_json(input_json):
                         att_dict['type_element'] = str(attr.dtype)
                     attributes.append(att_dict)
 
-            if fill_value:
-                variable = {'name': var_name,
-                            'type': ctype[str(var.dtype)],
-                            'fill_value': fill_value,
-                            'dimensions': dimensions,
-                            'attributes': attributes}
-            else:
-                variable = {'name': var_name,
-                            'type': ctype[str(var.dtype)],
-                            'dimensions': dimensions,
-                            'attributes': attributes}
+            variable = {'name': var_name,
+                        'type': ctype[str(var.dtype)],
+                        'fill_value': fill_value,
+                        'dimensions': dimensions,
+                        'attributes': attributes}
 
             variables.append(variable)
 
