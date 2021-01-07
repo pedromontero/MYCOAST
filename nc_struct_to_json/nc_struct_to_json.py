@@ -31,11 +31,12 @@ ctype = {
     '|S1': 'S1',
 }
 
+
 def to_json(obj):
     """
     Transform numpy data type to a json compatible datatype
     :param obj: The object whose datatype will be converted
-    :return:
+    :return: a json compatible datatype object
     """
     if isinstance(obj, numpy.integer):
         return int(obj)
@@ -44,7 +45,7 @@ def to_json(obj):
     elif isinstance(obj, numpy.ndarray):
         return obj.tolist()
     elif isinstance(obj, bytes):
-        return str(obj)
+        return str(obj)[2]  # This is a trick, to obtain the character of b' '
     else:
         return obj
 
@@ -95,6 +96,7 @@ def nc_struct_to_json(input_json):
     variables = []
     with netCDF4.Dataset(nc_file) as nc:
         for var_name in nc.variables:
+            fill_value = None
             var = nc.variables[var_name]
             print(var_name, ctype[str(var.datatype)])
             # dimensions of a variable
@@ -106,16 +108,27 @@ def nc_struct_to_json(input_json):
             attributes = []
             for v_attr in var.ncattrs():
                 attr = var.getncattr(v_attr)
-                print('------------ ', v_attr, attr, type(attr).__name__)
-                att_dict = {'name': v_attr, 'value': to_json(attr), 'type': type(attr).__name__}
-                if type(attr).__name__ == 'ndarray':
-                    att_dict['type_element'] = str(attr.dtype)
-                attributes.append(att_dict)
+                print('------------ ', v_attr, attr, type(attr).__name__, type(attr),to_json(attr))
+                if v_attr == '_FillValue':
+                    fill_value = to_json(attr)
+                else:
+                    att_dict = {'name': v_attr, 'value': to_json(attr), 'type': type(attr).__name__}
+                    if type(attr).__name__ == 'ndarray':
+                        att_dict['type_element'] = str(attr.dtype)
+                    attributes.append(att_dict)
 
-            variable = {'name': var_name,
-                        'type': ctype[str(var.dtype)],
-                        'dimensions': dimensions,
-                        'attributes': attributes}
+            if fill_value:
+                variable = {'name': var_name,
+                            'type': ctype[str(var.dtype)],
+                            'fill_value': fill_value,
+                            'dimensions': dimensions,
+                            'attributes': attributes}
+            else:
+                variable = {'name': var_name,
+                            'type': ctype[str(var.dtype)],
+                            'dimensions': dimensions,
+                            'attributes': attributes}
+
             variables.append(variable)
 
     json_dict['variables'] = variables

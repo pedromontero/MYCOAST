@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="write dimensions of a variable as a raw list">
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" afterDir="false" />
@@ -173,7 +173,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609780970719</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="write element type of a ndarray as 'type_element'">
+      <created>1609842730905</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609842730905</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fill_value solved">
+      <created>1609842748663</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609842748663</updated>
+    </task>
+    <task id="LOCAL-00006" summary="project">
+      <created>1609842763041</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609842763041</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +213,9 @@
     <MESSAGE value="Project MyCOAST starts with dir_structure" />
     <MESSAGE value="json_struct_to_nc.py can write dimensions" />
     <MESSAGE value="write dimensions of a variable as a raw list" />
-    <option name="LAST_COMMIT_MESSAGE" value="write dimensions of a variable as a raw list" />
+    <MESSAGE value="write element type of a ndarray as 'type_element'" />
+    <MESSAGE value="fill_value solved" />
+    <MESSAGE value="project" />
+    <option name="LAST_COMMIT_MESSAGE" value="project" />
   </component>
 </project>
