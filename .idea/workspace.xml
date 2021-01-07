@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="variables included. Name of script changed" />
+
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="Cleaning code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="development" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,16 +38,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/json_struct_to_nc" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\json_struct_to_nc" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\data\out" />
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\dir_structure" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.json_struct_to_nc">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,68 +93,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
+
+    <configuration name="json_struct_to_nc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\venv38\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/json_struct_to_nc" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
+    <configuration name="nc_struct_to_json" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\venv38\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nc_struct_to_json" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.json_struct_to_nc" />
+        <item itemvalue="Python.nc_struct_to_json" />
         <item itemvalue="Python.dir_structure" />
         <item itemvalue="Python.dir_structure" />
         <item itemvalue="Python.dir_structure" />
@@ -162,7 +162,70 @@
       <option name="project" value="LOCAL" />
       <updated>1609251153514</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="json_struct_to_nc.py can write dimensions">
+      <created>1609757357092</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609757357092</updated>
+    </task>
+    <task id="LOCAL-00003" summary="write dimensions of a variable as a raw list">
+      <created>1609780970719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609780970719</updated>
+    </task>
+    <task id="LOCAL-00004" summary="write element type of a ndarray as 'type_element'">
+      <created>1609842730905</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609842730905</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fill_value solved">
+      <created>1609842748663</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609842748663</updated>
+    </task>
+    <task id="LOCAL-00006" summary="project">
+      <created>1609842763041</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609842763041</updated>
+    </task>
+    <task id="LOCAL-00007" summary="_FillValue = b' ' will be moved to ' ' fixed, to correct b as fillvalue&#10;_FillValue is moved from atributes to a json field fill_value">
+      <created>1610007820200</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610007820200</updated>
+    </task>
+    <task id="LOCAL-00008" summary="If _FillValue is none then fill_value = null">
+      <created>1610008183384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610008183384</updated>
+    </task>
+    <task id="LOCAL-00009" summary="_Fillvalue is read from json field fill_value&#10;Cleaning code">
+      <created>1610009162110</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610009162110</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Cleaning code">
+      <created>1610009248557</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610009248557</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +242,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project MyCOAST starts with dir_structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project MyCOAST starts with dir_structure" />
+    <MESSAGE value="json_struct_to_nc.py can write dimensions" />
+    <MESSAGE value="write dimensions of a variable as a raw list" />
+    <MESSAGE value="write element type of a ndarray as 'type_element'" />
+    <MESSAGE value="fill_value solved" />
+    <MESSAGE value="project" />
+    <MESSAGE value="_FillValue = b' ' will be moved to ' ' fixed, to correct b as fillvalue&#10;_FillValue is moved from atributes to a json field fill_value" />
+    <MESSAGE value="If _FillValue is none then fill_value = null" />
+    <MESSAGE value="_Fillvalue is read from json field fill_value&#10;Cleaning code" />
+    <MESSAGE value="Cleaning code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning code" />
   </component>
 </project>

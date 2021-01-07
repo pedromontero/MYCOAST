@@ -1,0 +1,3 @@
+{ "json_file":  "../data/out/nc_header.json",
+  "nc_file": "../data/out/header.nc"
+}
