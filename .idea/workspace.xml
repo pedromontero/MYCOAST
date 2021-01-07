@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="If _FillValue is none then fill_value = null">
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="Cleaning code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610008183384</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="_Fillvalue is read from json field fill_value&#10;Cleaning code">
+      <created>1610009162110</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610009162110</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Cleaning code">
+      <created>1610009248557</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610009248557</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +245,8 @@
     <MESSAGE value="project" />
     <MESSAGE value="_FillValue = b' ' will be moved to ' ' fixed, to correct b as fillvalue&#10;_FillValue is moved from atributes to a json field fill_value" />
     <MESSAGE value="If _FillValue is none then fill_value = null" />
-    <option name="LAST_COMMIT_MESSAGE" value="If _FillValue is none then fill_value = null" />
+    <MESSAGE value="_Fillvalue is read from json field fill_value&#10;Cleaning code" />
+    <MESSAGE value="Cleaning code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning code" />
   </component>
 </project>
