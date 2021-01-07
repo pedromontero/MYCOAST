@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+
     <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="Cleaning code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,6 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+
     <configuration name="json_struct_to_nc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,6 +140,7 @@
       <list>
         <item itemvalue="Python.json_struct_to_nc" />
         <item itemvalue="Python.nc_struct_to_json" />
+        <item itemvalue="Python.dir_structure" />
         <item itemvalue="Python.dir_structure" />
         <item itemvalue="Python.dir_structure" />
       </list>
