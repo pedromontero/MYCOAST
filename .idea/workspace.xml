@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="project">
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="If _FillValue is none then fill_value = null">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\dir_structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.nc_struct_to_json">
+  <component name="RunManager" selected="Python.json_struct_to_nc">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.nc_struct_to_json" />
         <item itemvalue="Python.json_struct_to_nc" />
+        <item itemvalue="Python.nc_struct_to_json" />
         <item itemvalue="Python.dir_structure" />
         <item itemvalue="Python.dir_structure" />
       </list>
@@ -194,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609842763041</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="_FillValue = b' ' will be moved to ' ' fixed, to correct b as fillvalue&#10;_FillValue is moved from atributes to a json field fill_value">
+      <created>1610007820200</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610007820200</updated>
+    </task>
+    <task id="LOCAL-00008" summary="If _FillValue is none then fill_value = null">
+      <created>1610008183384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610008183384</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +229,8 @@
     <MESSAGE value="write element type of a ndarray as 'type_element'" />
     <MESSAGE value="fill_value solved" />
     <MESSAGE value="project" />
-    <option name="LAST_COMMIT_MESSAGE" value="project" />
+    <MESSAGE value="_FillValue = b' ' will be moved to ' ' fixed, to correct b as fillvalue&#10;_FillValue is moved from atributes to a json field fill_value" />
+    <MESSAGE value="If _FillValue is none then fill_value = null" />
+    <option name="LAST_COMMIT_MESSAGE" value="If _FillValue is none then fill_value = null" />
   </component>
 </project>
