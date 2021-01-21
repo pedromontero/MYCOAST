@@ -2,203 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="platform">
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/cmems_data_downloader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/cmems_downloader.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/cmems_downloader_log.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/GLOBAL_ANALYSIS_FORECAST_BIO_001_014.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/GLOBAL_ANALYSIS_FORECAST_PHYS_001_015.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/GLOBAL_ANALYSIS_FORECAST_PHY_001_024.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/GLOBAL_REANALYSIS_PHY_001_025.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/GLOBAL_REANALYSIS_PHY_001_026.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/INSITU_GLO_TS_OA_NRT_OBSERVATIONS_013_002_a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/INSITU_GLO_TS_OA_REP_OBSERVATIONS_013_002_b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/INSITU_GLO_TS_REP_OBSERVATIONS_013_001_b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/INSITU_GLO_UV_L2_REP_OBSERVATIONS_013_044.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/OCEANCOLOUR_GLO_OPTICS_L3_REP_OBSERVATIONS_009_064.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SEAICE_GLO_SEAICE_L4_REP_OBSERVATIONS_011_009.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SEALEVEL_ARC_PHY_L3_NRT_OBSERVATIONS_008_038.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SEALEVEL_GLO_PHY_L3_NRT_OBSERVATIONS_008_044.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SEALEVEL_GLO_PHY_L3_REP_OBSERVATIONS_008_045.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SEALEVEL_GLO_PHY_L4_NRT_OBSERVATIONS_008_046.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SST_GLO_SST_L3S_NRT_OBSERVATIONS_010_010.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SST_GLO_SST_L4_NRT_OBSERVATIONS_010_005.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SST_GLO_SST_L4_REP_OBSERVATIONS_010_011.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/SST_GLO_SST_L4_REP_OBSERVATIONS_010_024.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/database/WIND_GLO_WIND_L4_REP_OBSERVATIONS_012_003.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/documentation/changelog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/documentation/product_template.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/fonts/SourceSansPro-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/functions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/functions/gui_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/functions/material_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/functions/thread_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/functions/unzip_update.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/functions/window_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/functions/xml_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/EMC_globe_terrestre.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/about_popup_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/changelog_popup_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/cmems_data_downloader.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/cmems_data_downloader_icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/cmems_data_downloader_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/cmems_data_downloader_update_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/continue_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/down_arrow_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/download_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/exit_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/expert_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/file_ftp_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/folder_ftp_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/fwdarrow_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/info_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/info_popup_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/left_arrow_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/open_popup_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/option_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/right_arrow_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/save_popup_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/separator_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/up_arrow_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/icons/warning_popup_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_aboutlogwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_apiwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_calendardwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_calendarmwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_calendarwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_credentialswindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_downloadwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_expertwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_ftpwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_infowindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_infowindow2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_mainwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_optionwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_presavewindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_productwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_selectionwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_storewindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_successwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/Ui_updatewindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/aboutlogwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/apiwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/calendardwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/calendarmwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/calendarwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/credentialswindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/downloadwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/expertwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/ftpwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/infowindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/infowindow2.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/optionwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/presavewindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/productwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/selectionwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/storewindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/successwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/build/updatewindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS-Data-Downloader-master/ui/mainwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/CMEMS_INSTAC_IBI_Training_Intro.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/Presentations/CMEMS_INSTAC_IBI_Training_Intro.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/Presentations/CMEMS_INSTAC_Med_Training.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/Presentations/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/IndexFilePlots/.ipynb_checkpoints/IndexFile_Folium_Visalization-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/IndexFilePlots/.ipynb_checkpoints/plot_positions_latest_global-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/IndexFilePlots/.ipynb_checkpoints/read_CMEMS_indexfile-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/IndexFilePlots/IndexFile_Folium_Visalization.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/IndexFilePlots/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/IndexFilePlots/datafiles/index_latest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/IndexFilePlots/plot_positions_latest_global.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/IndexFilePlots/read_CMEMS_indexfile.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/Plot_TimeSeries1-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/Read_CORA_dataset-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/Read_TimeSeries_1-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/Read_TimeSeries_2-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/Read_TimeSeries_3-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/Read_drifter_data_1-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/Read_drifter_data_2-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/Read_drifter_data_3-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/plot_CMEMS_drifter-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/plot_CMEMS_mooring_NorthWestShelf-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/plot_CMEMS_profiler-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/.ipynb_checkpoints/plot_CMEMS_vessel-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/Plot_TimeSeries1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/Read_CORA_dataset.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/Read_TimeSeries_1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/Read_TimeSeries_2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/Read_TimeSeries_3.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/Read_drifter_data_1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/Read_drifter_data_2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/Read_drifter_data_3.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/datafiles/GL_PR_ML_EXRE0065_2010.nc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/datafiles/GL_PR_PF_3900150.nc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/datafiles/GL_TS_DC_2300691.nc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/datafiles/GL_TS_MO_62164.nc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/datafiles/IR_201511_TS_MO_61198.nc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/datafiles/NO_TS_MO_62081.nc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/datafiles/NO_TS_MO_HoekVanHollandTG.nc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/datafiles/index_latest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/datafiles/index_latest2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/plot_CMEMS_drifter.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/plot_CMEMS_mooring.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/plot_CMEMS_mooring_NorthWestShelf.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/plot_CMEMS_profiler.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/PlatformPlots/plot_CMEMS_vessel.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/.ipynb_checkpoints/index_file_download-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/.ipynb_checkpoints/index_file_navigation_boundingbox-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/.ipynb_checkpoints/index_file_navigation_fileUpdate-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/.ipynb_checkpoints/index_file_navigation_parameter-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/.ipynb_checkpoints/index_file_navigation_platformCategory-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/index_file_download.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/index_file_navigation_boundingbox.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/index_file_navigation_by_datatype.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/index_file_navigation_fileUpdate.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/index_file_navigation_parameter.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/PythonNotebooks/indexFileNavigation/index_file_navigation_platformCategory.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/cora.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/drifter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/drifter1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/drifter2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/drifter3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/folium.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/ftp_struture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/global.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/ibi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/indexFileNavBB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/indexFileNavDownload.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/index_download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/index_files.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/insitutac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/locations.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/locationsMED.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/mooring.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/naming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/netCDF_Download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/platforms.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/profiler.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/regions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/timeSeries1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/timeSeries2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/images/vessel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/externo/INSTACTraining-master/tips/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform/datos/db_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform/platform_nc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform/platform_nc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/datos/json_struct_to_nc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform_nc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform_nc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,6 +51,7 @@
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\json_struct_to_nc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\data\in" />
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\data\out" />
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\dir_structure" />
     </key>
@@ -354,8 +165,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.platform_nc" />
-        <item itemvalue="Python.nc_struct_to_json" />
         <item itemvalue="Python.json_struct_to_nc" />
+        <item itemvalue="Python.nc_struct_to_json" />
         <item itemvalue="Python.dir_structure" />
         <item itemvalue="Python.json_struct_to_nc" />
       </list>
@@ -447,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610971790210</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="platform">
+      <created>1610972180116</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610972180116</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

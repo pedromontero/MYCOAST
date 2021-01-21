@@ -18,9 +18,29 @@
 import sys
 import json
 from collections import OrderedDict
-from datetime import datetime
-from db import consulta_pd
+from datetime import datetime, timedelta
+import numpy
 import pandas as pd
+import netCDF4
+
+from db import consulta_pd
+from json_struct_to_nc.json_struct_to_nc import json_struct_to_nc
+
+
+def date_range(start_date, end_date, dt):
+    """
+    Return a list of dates >= start_date and < end_date and dt =dt in seconds
+    :param start_date:
+    :param end_date:
+    :param dt:
+    :return:
+    """
+    dates = []
+    delta = timedelta(seconds=dt)
+    while start_date < end_date:
+        dates.append(start_date)
+        start_date += delta
+    return dates
 
 
 def read_data(db_json_file, inicio, fin, ln_estacion,  ln_parametro):
@@ -32,7 +52,7 @@ def read_data(db_json_file, inicio, fin, ln_estacion,  ln_parametro):
 
     try:
         with open(db_json_file, 'r') as f:
-            con_parameters  = json.load(f, object_pairs_hook=OrderedDict)
+            con_parameters = json.load(f, object_pairs_hook=OrderedDict)
     except IOError:
         sys.exit(f'read_data: An error happened trying to read the file {db_json_file}')
     except KeyError:
@@ -70,28 +90,45 @@ def platform_nc(input_json_file):
         with open(input_json_file, 'r') as f:
             inputs = json.load(f, object_pairs_hook=OrderedDict)
             db_json_file = inputs['db_con']
+            start_date = datetime.strptime(inputs['start'], "%Y-%m-%dT%H:%M:%S")
+            end_date = datetime.strptime(inputs['end'], "%Y-%m-%dT%H:%M:%S")
+            dt = inputs['dt']
+            struct_json_file = inputs['struct_json']
     except IOError:
-        sys.exit('An error occured trying to read the file.')
+        sys.exit('platform_nc: An error trying to read the file.')
     except KeyError:
-        sys.exit('An error with a key')
+        sys.exit('platform_nc: An error with a key')
     except ValueError:
-        sys.exit('Non-numeric data found in the file.')
+        sys.exit('platform_nc: Non-numeric data found in the file.')
     except Exception as err:
         print(err)
-        sys.exit(f'Error with the input {input_json_file}')
+        sys.exit(f'platform_nc: Error with the input {input_json_file}')
+
+    nc_file_name = json_struct_to_nc(struct_json_file)
 
     variables = [{'name': 'TEMPERATURE', 'flag': 'QC_TEMPERATURE', 'ln': 20003},
                  {'name': 'SALINITY', 'flag': 'QC_SALINITY', 'ln': 20005}]
 
-    inicio = datetime(2020, 5, 15, 0, 0, 0)
-    fin = datetime(2020, 5, 16, 0, 0, 0)
+
 
     ln_estacion = 15001  # Cortegada
+
+    # TIME
+    dates = date_range(start_date, end_date, dt)
+    nc_file = netCDF4.Dataset(nc_file_name, mode='a')
+    times = (nc_file["TIME"])
+    times[:] = netCDF4.date2num(dates, units=times.units, calendar=times.calendar)
+    qc_times = (nc_file["TIME_QC"])
+    length, = times.shape
+    qc_times[:] = numpy.ones(length, dtype="i1")
+    nc_file.close()
+
+
 
     first = True
     for variable in variables:
 
-        df = read_data(db_json_file, inicio, fin, ln_estacion,  variable['ln'])
+        df = read_data(db_json_file, start_date, end_date, ln_estacion,  variable['ln'])
 
         df.rename(columns={'InstanteLectura': 'TIME',
                            'Valor': variable['name'],
@@ -103,7 +140,16 @@ def platform_nc(input_json_file):
             first = False
         else:
             result = pd.merge(result, df,  how='outer', on='TIME')
-    print(result)
+    nc_file = netCDF4.Dataset(nc_file_name, mode='a')
+    temps = (nc_file["TEMP"])
+    temp =  numpy.array(round(result['TEMPERATURE']/0.001), dtype='i4')
+    print(temps)
+    tem = numpy.empty(temps.shape)
+    print(tem)
+    tem[:,2] = temp
+    temps[:]= tem
+
+    print(temps)
 
 
 

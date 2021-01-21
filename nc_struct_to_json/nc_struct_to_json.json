@@ -1,4 +1,4 @@
 {
-  "nc_file": "../data/in/IR_WS_MO_6100430_20201229.nc",
-  "json_file":  "../data/out/nc_header.json"
+  "nc_file": "../data/in/IR_TS_MO_6201038_20210117.nc",
+  "json_file":  "../data/out/nc_cortegada_24h.json"
 }
