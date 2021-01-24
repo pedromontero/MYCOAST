@@ -106,8 +106,8 @@ def platform_nc(input_json_file):
 
     nc_file_name = json_struct_to_nc(struct_json_file)
 
-    variables = [{'name': 'TEMPERATURE', 'flag': 'QC_TEMPERATURE', 'ln': 20003},
-                 {'name': 'SALINITY', 'flag': 'QC_SALINITY', 'ln': 20005}]
+    variables = [{'name': 'TEMPERATURE_SUP', 'flag': 'QC_TEMPERATURE', 'ln': 20003, 'depth': 0.5},
+                 {'name': 'SALINITY', 'flag': 'QC_SALINITY', 'ln': 20005, 'depth': 0.5}]
 
 
 
@@ -141,15 +141,25 @@ def platform_nc(input_json_file):
         else:
             result = pd.merge(result, df,  how='outer', on='TIME')
     nc_file = netCDF4.Dataset(nc_file_name, mode='a')
-    temps = (nc_file["TEMP"])
-    temp =  numpy.array(round(result['TEMPERATURE']/0.001), dtype='i4')
-    print(temps)
-    tem = numpy.empty(temps.shape)
-    print(tem)
-    tem[:,2] = temp
-    temps[:]= tem
 
-    print(temps)
+    # Find out the depth
+
+    depths = (nc_file['DEPH'][0])
+    print(depths)
+    v_depth = variable['depth']
+    i_depth = numpy.where(depths == v_depth)[0][0]
+    print(f'La profundidad de {v_depth} es {i_depth}')
+
+
+    temps = (nc_file["TEMP"])
+    temp = numpy.array(round(result['TEMPERATURE_SUP']/0.01), dtype='i2')
+    temp =result['TEMPERATURE_SUP']/0.001
+    temp = round(temp).astype('int')
+    temp = numpy.array(temp, dtype='i2')
+    print(temp)
+    temps[:, i_depth] = temp
+    nc_file.close()
+
 
 
 
