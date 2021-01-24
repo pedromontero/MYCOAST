@@ -1,0 +1,3048 @@
+{
+    "dimensions": [
+        {
+            "name": "TIME",
+            "size": 144
+        },
+        {
+            "name": "DEPTH",
+            "size": 5
+        },
+        {
+            "name": "LATITUDE",
+            "size": 144
+        },
+        {
+            "name": "LONGITUDE",
+            "size": 144
+        },
+        {
+            "name": "POSITION",
+            "size": 144
+        }
+    ],
+    "global attributes": [
+        {
+            "name": "platform_code",
+            "value": "6201038",
+            "type": "str"
+        },
+        {
+            "name": "platform_name",
+            "value": "Cortegada platform",
+            "type": "str"
+        },
+        {
+            "name": "data_mode",
+            "value": "R",
+            "type": "str"
+        },
+        {
+            "name": "title",
+            "value": "Iberia-Biscay-Ireland Regional Seas - In Situ Observation Copernicus",
+            "type": "str"
+        },
+        {
+            "name": "summary",
+            "value": "",
+            "type": "str"
+        },
+        {
+            "name": "naming_authority",
+            "value": "Copernicus Marine In Situ",
+            "type": "str"
+        },
+        {
+            "name": "id",
+            "value": "IR_TS_MO_6201038_20210117",
+            "type": "str"
+        },
+        {
+            "name": "wmo_platform_code",
+            "value": "6201038",
+            "type": "str"
+        },
+        {
+            "name": "ices_platform_code",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "source",
+            "value": "mooring",
+            "type": "str"
+        },
+        {
+            "name": "source_platform_category_code",
+            "value": "48",
+            "type": "str"
+        },
+        {
+            "name": "institution_edmo_code",
+            "value": "4841 3510 1637",
+            "type": "str"
+        },
+        {
+            "name": "institution",
+            "value": "Technological Institute for the Control of the Marine Environment of Galicia (Spain);MeteoGalicia (Spain);CETMAR Foundation / Marine Technological Center (Spain)",
+            "type": "str"
+        },
+        {
+            "name": "institution_references",
+            "value": "http://www.intecmar.gal/ https://www.meteogalicia.gal/ https://cetmar.org/ http://www.puertos.es",
+            "type": "str"
+        },
+        {
+            "name": "site_code",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "comment",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "contact",
+            "value": "pmontero@intecmar.gal coordinador-clima.meteogalicia@xunta.es storres@cetmar.org cmems-service@puertos.es",
+            "type": "str"
+        },
+        {
+            "name": "area",
+            "value": "North Atlantic Ocean",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_vertical_min",
+            "value": "-7.0",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_vertical_max",
+            "value": "8.0",
+            "type": "str"
+        },
+        {
+            "name": "time_coverage_start",
+            "value": "2021-01-17T00:00:00Z",
+            "type": "str"
+        },
+        {
+            "name": "time_coverage_end",
+            "value": "2021-01-17T23:00:00Z",
+            "type": "str"
+        },
+        {
+            "name": "cdm_data_type",
+            "value": "timeSeries",
+            "type": "str"
+        },
+        {
+            "name": "data_type",
+            "value": "OceanSITES time-series data",
+            "type": "str"
+        },
+        {
+            "name": "bottom_depth",
+            "value": 35,
+            "type": "int32"
+        },
+        {
+            "name": "format_version",
+            "value": "1.4",
+            "type": "str"
+        },
+        {
+            "name": "Conventions",
+            "value": "CF-1.6 Copernicus-InSituTAC-FormatManual-1.41 Copernicus-InSituTAC-SRD-1.5 Copernicus-InSituTAC-ParametersList-3.2.0",
+            "type": "str"
+        },
+        {
+            "name": "netcdf_version",
+            "value": "netCDF-4 classic model",
+            "type": "str"
+        },
+        {
+            "name": "references",
+            "value": "http://marine.copernicus.eu http://www.marineinsitu.eu",
+            "type": "str"
+        },
+        {
+            "name": "data_assembly_center",
+            "value": "Puertos del Estado",
+            "type": "str"
+        },
+        {
+            "name": "update_interval",
+            "value": "PT1H",
+            "type": "str"
+        },
+        {
+            "name": "citation",
+            "value": "These data were collected and made freely available by the Copernicus project and the programs that contribute to it. ",
+            "type": "str"
+        },
+        {
+            "name": "distribution_statement",
+            "value": "These data follow Copernicus standards; they are public and free of charge. User assumes all risk for use of data. User must display citation in any publication or product using data. User must contact PI prior to any commercial use of data.",
+            "type": "str"
+        },
+        {
+            "name": "doi",
+            "value": "https://doi.org/10.13155/59938 https://doi.org/10.13155/40846 https://doi.org/10.13155/53381 https://doi.org/10.13155/36230 https://doi.org/10.13155/43494",
+            "type": "str"
+        },
+        {
+            "name": "pi_name",
+            "value": "PdE",
+            "type": "str"
+        },
+        {
+            "name": "qc_manual",
+            "value": "Recommendations for in-situ data Near Real Time Quality Control https://doi.org/10.13155/36230",
+            "type": "str"
+        },
+        {
+            "name": "date_update",
+            "value": "2021-01-18T12:26:09Z",
+            "type": "str"
+        },
+        {
+            "name": "history",
+            "value": "2021-01-18T12:26:09ZCreation",
+            "type": "str"
+        },
+        {
+            "name": "wmo_inst_type",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "last_date_observation",
+            "value": "2021-01-17T23:00:00Z",
+            "type": "str"
+        },
+        {
+            "name": "last_latitude_observation",
+            "value": "42.6268",
+            "type": "str"
+        },
+        {
+            "name": "last_longitude_observation",
+            "value": "-8.7823",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_lat_min",
+            "value": "42.62682",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_lat_max",
+            "value": "42.62682",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_lon_min",
+            "value": "-8.78233",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_lon_max",
+            "value": "-8.78233",
+            "type": "str"
+        }
+    ],
+    "variables": [
+        {
+            "name": "TIME",
+            "type": "f8",
+            "fill_value": null,
+            "dimensions": [
+                "TIME"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Time",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "time",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "days since 1950-01-01T00:00:00Z",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": -90000.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 90000.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "QC_indicator",
+                    "value": 1,
+                    "type": "int32"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "axis",
+                    "value": "T",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "TIME_QC",
+                    "type": "str"
+                },
+                {
+                    "name": "calendar",
+                    "value": "standard",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "TIME_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Time quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "LATITUDE",
+            "type": "f4",
+            "fill_value": null,
+            "dimensions": [
+                "LATITUDE"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Latitude of each location",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "latitude",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degree_north",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": -90.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 90.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "QC_indicator",
+                    "value": 1,
+                    "type": "int32"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "axis",
+                    "value": "Y",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "POSITION_QC",
+                    "type": "str"
+                }
+            ],
+            "value": 42.62682
+        },
+        {
+            "name": "LONGITUDE",
+            "type": "f4",
+            "fill_value": null,
+            "dimensions": [
+                "LONGITUDE"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Longitude of each location",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "longitude",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degree_east",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": -180.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 180.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "QC_indicator",
+                    "value": 1,
+                    "type": "int32"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "axis",
+                    "value": "X",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "POSITION_QC",
+                    "type": "str"
+                }
+            ],
+            "value": -8.78233
+        },
+        {
+            "name": "POSITION_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "POSITION"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Position quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ],
+            "value": 1
+        },
+        {
+            "name": "DEPH",
+            "type": "f4",
+            "fill_value": 9.969209968386869e+36,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Depth",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "depth",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "m",
+                    "type": "str"
+                },
+                {
+                    "name": "positive",
+                    "value": "down",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": -12000.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 12000.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "axis",
+                    "value": "Z",
+                    "type": "str"
+                },
+                {
+                    "name": "reference",
+                    "value": "sea_level",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "DEPH_QC DEPH_DM",
+                    "type": "str"
+                }
+            ],
+            "value": [-7,-4.5,0.5,3.5,8]
+        },
+        {
+            "name": "DEPH_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Depth quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ],
+            "value" : 7
+        },
+        {
+            "name": "DEPH_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Depth method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ],
+            "value" : "R"
+        },
+        {
+            "name": "DRYT",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "air_temperature",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degrees_C",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Air temperature in dry bulb",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": -1000,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 39900,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": -4.5,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "DRYT_QC DRYT_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "DRYT_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Air temperature in dry bulb quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "DRYT_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Air temperature in dry bulb method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "WSPD",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "wind_speed",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "m s-1",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Horizontal wind speed",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 45000,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": -7.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "WSPD_QC WSPD_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "WSPD_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Horizontal wind speed quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "WSPD_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Horizontal wind speed method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "WDIR",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "wind_from_direction",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degree",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Wind from direction relative true north",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 360000,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": -7.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "WDIR_QC WDIR_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "WDIR_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Wind from direction relative true north quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "WDIR_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Wind from direction relative true north method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "RELH",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "relative_humidity",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "%",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Relative humidity",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 100010,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": -4.5,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "RELH_QC RELH_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "RELH_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Relative humidity quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "RELH_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Relative humidity method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "GSPD",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "wind_speed_of_gust",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "m s-1",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Gust wind speed",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 70000,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": -7.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "GSPD_QC GSPD_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "GSPD_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Gust wind speed quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "GSPD_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Gust wind speed method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "GDIR",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "wind_gust_from_direction",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degree",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Gust wind from direction relative true north",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 360000,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": -7.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "GDIR_QC GDIR_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "GDIR_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Gust wind from direction relative true north quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "GDIR_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Gust wind from direction relative true north method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "DEWT",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "dew_point_temperature",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degrees_C",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Dew point temperature",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": -10000,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 40000,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": -4.5,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "DEWT_QC DEWT_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "DEWT_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Dew point temperature quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "DEWT_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Dew point temperature method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "HCSP",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_speed",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "m s-1",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Horizontal current speed",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 5000,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": 8.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "HCSP_QC HCSP_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "HCSP_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Horizontal current speed quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "HCSP_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Horizontal current speed method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "HCDT",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "direction_of_sea_water_velocity",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degree",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Current to direction relative true north",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 360000,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": 8.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "HCDT_QC HCDT_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "HCDT_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Current to direction relative true north quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "HCDT_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Current to direction relative true north method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "TEMP",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_temperature",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degrees_C",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Sea temperature",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 29800,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": 6.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "TEMP_QC TEMP_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "TEMP_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Sea temperature quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "TEMP_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Sea temperature method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "PSAL",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_practical_salinity",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "0.001",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Practical salinity",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 10000,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 38000,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": 6.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "PSAL_QC PSAL_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "PSAL_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Practical salinity quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "PSAL_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Practical salinity method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "CNDC",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_electrical_conductivity",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "S m-1",
+                    "type": "str"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Electrical conductivity",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int32"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 70000,
+                    "type": "int32"
+                },
+                {
+                    "name": "comment",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "accuracy",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "precision",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "resolution",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "cell_methods",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "coordinates",
+                    "value": "TIME LATITUDE LONGITUDE DEPTH",
+                    "type": "str"
+                },
+                {
+                    "name": "type_of_analysis",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_depth",
+                    "value": 6.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "sensor_mount",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "sensor_orientation",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "CNDC_QC CNDC_DM",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "CNDC_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Electrical conductivity quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "CNDC_DM",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Electrical conductivity method of data processing",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 1",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_values",
+                    "value": "R, A, D",
+                    "type": "str"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "real-time adjusted-in-real-time delayed-mode",
+                    "type": "str"
+                }
+            ]
+        }
+    ]
+}
