@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="static values included">
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="cortegada station json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/datos/json_struct_to_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/platform/datos/json_struct_to_nc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platform/platform_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform_nc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -267,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611240896927</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="first tests with variables: &#10;depth problem solved. It is included in the innitial dictionary.&#10;Current problem with int32 when writing netcdf">
+      <created>1611476677461</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611476677461</updated>
+    </task>
+    <task id="LOCAL-00015" summary="cortegada station json">
+      <created>1611476760261</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611476760261</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +312,8 @@
     <MESSAGE value="readme" />
     <MESSAGE value="platform" />
     <MESSAGE value="static values included" />
-    <option name="LAST_COMMIT_MESSAGE" value="static values included" />
+    <MESSAGE value="first tests with variables: &#10;depth problem solved. It is included in the innitial dictionary.&#10;Current problem with int32 when writing netcdf" />
+    <MESSAGE value="cortegada station json" />
+    <option name="LAST_COMMIT_MESSAGE" value="cortegada station json" />
   </component>
 </project>

@@ -106,8 +106,10 @@ def platform_nc(input_json_file):
 
     nc_file_name = json_struct_to_nc(struct_json_file)
 
-    variables = [{'name': 'TEMPERATURE_SUP', 'flag': 'QC_TEMPERATURE', 'ln': 20003, 'depth': 0.5},
-                 {'name': 'SALINITY', 'flag': 'QC_SALINITY', 'ln': 20005, 'depth': 0.5}]
+    variables = [{'name': 'TEMPERATURE_SUP', 'flag': 'QC_TEMPERATURE_SUP', 'ln': 20003,
+                  'name_nc': 'TEMP', 'depth': 0.5, 'DM': 'R'},
+                 {'name': 'SALINITY_SUP', 'flag': 'QC_SALINITY_SUP', 'ln': 20005,
+                  'name_nc': 'PSAL', 'depth': 0.5, 'DM': 'R'}]
 
 
 
@@ -122,8 +124,6 @@ def platform_nc(input_json_file):
     length, = times.shape
     qc_times[:] = numpy.ones(length, dtype="i1")
     nc_file.close()
-
-
 
     first = True
     for variable in variables:
@@ -140,27 +140,31 @@ def platform_nc(input_json_file):
             first = False
         else:
             result = pd.merge(result, df,  how='outer', on='TIME')
+
     nc_file = netCDF4.Dataset(nc_file_name, mode='a')
 
-    # Find out the depth
+    for variable in variables:
+        nc_name = variable['name_nc']
+        qc_nc_name = nc_name + '_QC'
+        dm_nc_name = nc_name + '_DM'
 
-    depths = (nc_file['DEPH'][0])
-    print(depths)
-    v_depth = variable['depth']
-    i_depth = numpy.where(depths == v_depth)[0][0]
-    print(f'La profundidad de {v_depth} es {i_depth}')
+        # Find out the depth
+        depths = (nc_file['DEPH'][0])
+        v_depth = variable['depth']
+        i_depth = numpy.where(depths == v_depth)[0][0]
 
+        nc_var = (nc_file[nc_name])
+        values = numpy.array(result[variable['name']])
+        nc_var[:, i_depth] = values
 
-    temps = (nc_file["TEMP"])
-    temp = numpy.array(round(result['TEMPERATURE_SUP']/0.01), dtype='i2')
-    temp =result['TEMPERATURE_SUP']/0.001
-    temp = round(temp).astype('int')
-    temp = numpy.array(temp, dtype='i2')
-    print(temp)
-    temps[:, i_depth] = temp
+        nc_var_qc = (nc_file[qc_nc_name])
+        values_qc = numpy.array(result[variable['flag']])
+        nc_var_qc[:, i_depth] = values_qc
+
+        nc_var_dm = (nc_file[dm_nc_name])
+        nc_var_dm[:, i_depth] = variable['DM']
+
     nc_file.close()
-
-
 
 
 if __name__ == '__main__':
