@@ -106,13 +106,13 @@ def platform_nc(input_json_file):
 
     nc_file_name = json_struct_to_nc(struct_json_file)
 
-    variables = [{'name': 'TEMP_AIR', 'flag': 'QC_TEMP_AIR', 'ln': 83, 'name_nc': 'DRYT', 'depth': -4.5, 'DM': 'R'},
-                 {'name': 'WIND_SPD', 'flag': 'QC_WIND_SPD', 'ln': 81, 'name_nc': 'WSPD', 'depth': -7, 'DM': 'R'},
-                 {'name': 'WIND_DIR', 'flag': 'QC_WIND_DIR', 'ln': 82, 'name_nc': 'WDIR', 'depth': -7, 'DM': 'R'},
-                 {'name': 'HUMD_REL', 'flag': 'QC_HUMD_REL', 'ln': 86, 'name_nc': 'RELH', 'depth': -4.5, 'DM': 'R'},
-                 {'name': 'TEMP_SUP', 'flag': 'QC_TEMP_SUP', 'ln': 20003, 'name_nc': 'TEMP', 'depth': 0.5, 'DM': 'R'},
-                 {'name': 'TEMP_FON', 'flag': 'QC_TEMP_FON', 'ln': 20019, 'name_nc': 'TEMP', 'depth': 3.5, 'DM': 'R'},
-                 {'name': 'SAL_SUP', 'flag': 'QC_SAL_SUP', 'ln': 20005, 'name_nc': 'PSAL', 'depth': 0.5, 'DM': 'R'}]
+    variables = [{'ln': 83, 'name_nc': 'DRYT', 'depth': -4.5, 'DM': 'R'},
+                 {'ln': 81, 'name_nc': 'WSPD', 'depth': -7, 'DM': 'R'},
+                 {'ln': 82, 'name_nc': 'WDIR', 'depth': -7, 'DM': 'R'},
+                 {'ln': 86, 'name_nc': 'RELH', 'depth': -4.5, 'DM': 'R'},
+                 {'ln': 20003, 'name_nc': 'TEMP', 'depth': 0.5, 'DM': 'R'},
+                 {'ln': 20019, 'name_nc': 'TEMP', 'depth': 3.5, 'DM': 'R'},
+                 {'ln': 20005, 'name_nc': 'PSAL', 'depth': 0.5, 'DM': 'R'}]
 
 
 
@@ -132,10 +132,11 @@ def platform_nc(input_json_file):
     for variable in variables:
 
         df = read_data(db_json_file, start_date, end_date, ln_estacion,  variable['ln'])
-
+        name = variable['name_nc'] + '_' + str(variable['depth'])
+        flag_name = name + '_QC'
         df.rename(columns={'InstanteLectura': 'TIME',
-                           'Valor': variable['name'],
-                           'LnCodigoValidacion': variable['flag']},
+                           'Valor': name,
+                           'LnCodigoValidacion': flag_name},
                   inplace=True)
 
         if first:
@@ -144,6 +145,7 @@ def platform_nc(input_json_file):
         else:
             result = pd.merge(result, df,  how='outer', on='TIME')
 
+    print(result)
     nc_file = netCDF4.Dataset(nc_file_name, mode='a')
 
     for variable in variables:
@@ -151,17 +153,20 @@ def platform_nc(input_json_file):
         qc_nc_name = nc_name + '_QC'
         dm_nc_name = nc_name + '_DM'
 
+        name = variable['name_nc'] + '_' + str(variable['depth'])
+        flag_name = name + '_QC'
+
         # Find out the depth
         depths = (nc_file['DEPH'][0])
         v_depth = variable['depth']
         i_depth = numpy.where(depths == v_depth)[0][0]
 
         nc_var = (nc_file[nc_name])
-        values = numpy.array(result[variable['name']])
+        values = numpy.array(result[name])
         nc_var[:, i_depth] = values
 
         nc_var_qc = (nc_file[qc_nc_name])
-        values_qc = numpy.array(result[variable['flag']])
+        values_qc = numpy.array(result[flag_name])
         nc_var_qc[:, i_depth] = values_qc
 
         nc_var_dm = (nc_file[dm_nc_name])
