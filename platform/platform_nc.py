@@ -106,10 +106,13 @@ def platform_nc(input_json_file):
 
     nc_file_name = json_struct_to_nc(struct_json_file)
 
-    variables = [{'name': 'TEMPERATURE_SUP', 'flag': 'QC_TEMPERATURE_SUP', 'ln': 20003,
-                  'name_nc': 'TEMP', 'depth': 0.5, 'DM': 'R'},
-                 {'name': 'SALINITY_SUP', 'flag': 'QC_SALINITY_SUP', 'ln': 20005,
-                  'name_nc': 'PSAL', 'depth': 0.5, 'DM': 'R'}]
+    variables = [{'name': 'TEMP_AIR', 'flag': 'QC_TEMP_AIR', 'ln': 83, 'name_nc': 'DRYT', 'depth': -4.5, 'DM': 'R'},
+                 {'name': 'WIND_SPD', 'flag': 'QC_WIND_SPD', 'ln': 81, 'name_nc': 'WSPD', 'depth': -7, 'DM': 'R'},
+                 {'name': 'WIND_DIR', 'flag': 'QC_WIND_DIR', 'ln': 82, 'name_nc': 'WDIR', 'depth': -7, 'DM': 'R'},
+                 {'name': 'HUMD_REL', 'flag': 'QC_HUMD_REL', 'ln': 86, 'name_nc': 'RELH', 'depth': -4.5, 'DM': 'R'},
+                 {'name': 'TEMP_SUP', 'flag': 'QC_TEMP_SUP', 'ln': 20003, 'name_nc': 'TEMP', 'depth': 0.5, 'DM': 'R'},
+                 {'name': 'TEMP_FON', 'flag': 'QC_TEMP_FON', 'ln': 20019, 'name_nc': 'TEMP', 'depth': 3.5, 'DM': 'R'},
+                 {'name': 'SAL_SUP', 'flag': 'QC_SAL_SUP', 'ln': 20005, 'name_nc': 'PSAL', 'depth': 0.5, 'DM': 'R'}]
 
 
 

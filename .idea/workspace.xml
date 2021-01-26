@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="cortegada station json">
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="variables writting with qc and dm finished.&#10;Needed properties for each variable to write the netcdf are stored in the dictionary variables. With this dictionary a pandas df is created at the begining. Then this df is used to write the netcdf file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/datos/json_struct_to_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/platform/datos/json_struct_to_nc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platform/platform_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform_nc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -283,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611476760261</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="variables writting with qc and dm finished.&#10;Needed properties for each variable to write the netcdf are stored in the dictionary variables. With this dictionary a pandas df is created at the begining. Then this df is used to write the netcdf file">
+      <created>1611555508383</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611555508383</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,6 +319,7 @@
     <MESSAGE value="static values included" />
     <MESSAGE value="first tests with variables: &#10;depth problem solved. It is included in the innitial dictionary.&#10;Current problem with int32 when writing netcdf" />
     <MESSAGE value="cortegada station json" />
-    <option name="LAST_COMMIT_MESSAGE" value="cortegada station json" />
+    <MESSAGE value="variables writting with qc and dm finished.&#10;Needed properties for each variable to write the netcdf are stored in the dictionary variables. With this dictionary a pandas df is created at the begining. Then this df is used to write the netcdf file" />
+    <option name="LAST_COMMIT_MESSAGE" value="variables writting with qc and dm finished.&#10;Needed properties for each variable to write the netcdf are stored in the dictionary variables. With this dictionary a pandas df is created at the begining. Then this df is used to write the netcdf file" />
   </component>
 </project>
