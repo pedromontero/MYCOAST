@@ -110,9 +110,18 @@ def platform_nc(input_json_file):
                  {'ln': 81, 'name_nc': 'WSPD', 'depth': -7, 'DM': 'R'},
                  {'ln': 82, 'name_nc': 'WDIR', 'depth': -7, 'DM': 'R'},
                  {'ln': 86, 'name_nc': 'RELH', 'depth': -4.5, 'DM': 'R'},
+                 {'ln': 10003, 'name_nc': 'GSPD', 'depth': -7, 'DM': 'R'},
+                 {'ln': 10015, 'name_nc': 'GDIR', 'depth': -7, 'DM': 'R'},
+                 {'ln': 10018, 'name_nc': 'DEWT', 'depth': -4.5, 'DM': 'R'},
+ #                {'ln': 20000, 'name_nc': 'HCSP', 'depth': 8, 'DM': 'R'},  # TODO: change x, y velocity to direction, speed
+ #                {'ln': 20002, 'name_nc': 'HCDT', 'depth': 8, 'DM': 'R'},
+
                  {'ln': 20003, 'name_nc': 'TEMP', 'depth': 0.5, 'DM': 'R'},
                  {'ln': 20019, 'name_nc': 'TEMP', 'depth': 3.5, 'DM': 'R'},
-                 {'ln': 20005, 'name_nc': 'PSAL', 'depth': 0.5, 'DM': 'R'}]
+                 {'ln': 20005, 'name_nc': 'PSAL', 'depth': 0.5, 'DM': 'R'},
+                 {'ln': 20018, 'name_nc': 'PSAL', 'depth': 3.5, 'DM': 'R'},
+                 {'ln': 20004, 'name_nc': 'CNDC', 'depth': 0.5, 'DM': 'R'},
+                 {'ln': 20022, 'name_nc': 'CNDC', 'depth': 3.5, 'DM': 'R'}]
 
 
 
@@ -145,34 +154,35 @@ def platform_nc(input_json_file):
         else:
             result = pd.merge(result, df,  how='outer', on='TIME')
 
-    print(result)
-    nc_file = netCDF4.Dataset(nc_file_name, mode='a')
+    with netCDF4.Dataset(nc_file_name, mode='a') as nc_file:
+        for variable in variables:
+            nc_name = variable['name_nc']
+            qc_nc_name = nc_name + '_QC'
+            dm_nc_name = nc_name + '_DM'
 
-    for variable in variables:
-        nc_name = variable['name_nc']
-        qc_nc_name = nc_name + '_QC'
-        dm_nc_name = nc_name + '_DM'
+            name = variable['name_nc'] + '_' + str(variable['depth'])
+            flag_name = name + '_QC'
 
-        name = variable['name_nc'] + '_' + str(variable['depth'])
-        flag_name = name + '_QC'
+            # Find out the depth
+            depths = (nc_file['DEPH'][0])
+            v_depth = variable['depth']
+            i_depth = numpy.where(depths == v_depth)[0][0]
 
-        # Find out the depth
-        depths = (nc_file['DEPH'][0])
-        v_depth = variable['depth']
-        i_depth = numpy.where(depths == v_depth)[0][0]
+            nc_var = (nc_file[nc_name])
+            values = numpy.array(result[name])
 
-        nc_var = (nc_file[nc_name])
-        values = numpy.array(result[name])
-        nc_var[:, i_depth] = values
+            nc_var[:, i_depth] = values
 
-        nc_var_qc = (nc_file[qc_nc_name])
-        values_qc = numpy.array(result[flag_name])
-        nc_var_qc[:, i_depth] = values_qc
+            nc_var_qc = (nc_file[qc_nc_name])
+            values_qc = numpy.array(result[flag_name])
+            nc_var_qc[:, i_depth] = values_qc
 
-        nc_var_dm = (nc_file[dm_nc_name])
-        nc_var_dm[:, i_depth] = variable['DM']
+            nc_var_dm = (nc_file[dm_nc_name])
+            nc_var_dm[:, i_depth] = variable['DM']
 
-    nc_file.close()
+            print(f'Variable {nc_name} at {v_depth} saved in file {nc_file_name}')
+
+
 
 
 if __name__ == '__main__':
