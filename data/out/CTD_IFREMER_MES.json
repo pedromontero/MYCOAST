@@ -1,0 +1,1368 @@
+{
+    "dimensions": [
+        {
+            "name": "TIME",
+            "size": 4
+        },
+        {
+            "name": "DEPTH",
+            "size": 269
+        },
+        {
+            "name": "LATITUDE",
+            "size": 4
+        },
+        {
+            "name": "LONGITUDE",
+            "size": 4
+        },
+        {
+            "name": "POSITION",
+            "size": 4
+        },
+        {
+            "name": "STRING32",
+            "size": 32
+        },
+        {
+            "name": "STRING256",
+            "size": 256
+        }
+    ],
+    "global attributes": [
+        {
+            "name": "platform_code",
+            "value": "IF000657",
+            "type": "str"
+        },
+        {
+            "name": "platform_name",
+            "value": "Point 1 Dunkerque",
+            "type": "str"
+        },
+        {
+            "name": "wmo_platform_code",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "ices_platform_code",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "coriolis_platform_code",
+            "value": "IF000657",
+            "type": "str"
+        },
+        {
+            "name": "site_code",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "comment",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "source",
+            "value": "vessel at fixed position",
+            "type": "str"
+        },
+        {
+            "name": "source_platform_category_code",
+            "value": "34",
+            "type": "str"
+        },
+        {
+            "name": "institution",
+            "value": "IFREMER  Institut Francais de Recherche pour l'Exploitation de la Mer",
+            "type": "str"
+        },
+        {
+            "name": "institution_edmo_code",
+            "value": "1054",
+            "type": "str"
+        },
+        {
+            "name": "institution_references",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "naming_authority",
+            "value": "Copernicus Marine In Situ",
+            "type": "str"
+        },
+        {
+            "name": "title",
+            "value": "Global Ocean - In Situ Observation Copernicus",
+            "type": "str"
+        },
+        {
+            "name": "summary",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "data_mode",
+            "value": "R",
+            "type": "str"
+        },
+        {
+            "name": "wmo_inst_type",
+            "value": "830",
+            "type": "str"
+        },
+        {
+            "name": "area",
+            "value": "Global Ocean",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_lat_min",
+            "value": "51.15556",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_lat_max",
+            "value": "51.15556",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_lon_min",
+            "value": "2.25278",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_lon_max",
+            "value": "2.25278",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_vertical_min",
+            "value": "0.21",
+            "type": "str"
+        },
+        {
+            "name": "geospatial_vertical_max",
+            "value": "20.73",
+            "type": "str"
+        },
+        {
+            "name": "time_coverage_start",
+            "value": "2020-12-03T11:28:45Z",
+            "type": "str"
+        },
+        {
+            "name": "time_coverage_end",
+            "value": "2020-12-29T13:36:58Z",
+            "type": "str"
+        },
+        {
+            "name": "data_type",
+            "value": "OceanSITES vertical profile",
+            "type": "str"
+        },
+        {
+            "name": "cdm_data_type",
+            "value": "profile",
+            "type": "str"
+        },
+        {
+            "name": "bottom_depth",
+            "value": " ",
+            "type": "str"
+        },
+        {
+            "name": "last_date_observation",
+            "value": "2020-12-29T13:36:58Z",
+            "type": "str"
+        },
+        {
+            "name": "last_latitude_observation",
+            "value": "51.15556",
+            "type": "str"
+        },
+        {
+            "name": "last_longitude_observation",
+            "value": "2.25278",
+            "type": "str"
+        },
+        {
+            "name": "references",
+            "value": "http://marine.copernicus.eu http://www.marineinsitu.eu",
+            "type": "str"
+        },
+        {
+            "name": "data_assembly_center",
+            "value": "Ifremer",
+            "type": "str"
+        },
+        {
+            "name": "update_interval",
+            "value": "P1D",
+            "type": "str"
+        },
+        {
+            "name": "citation",
+            "value": "These data were collected and made freely available by the Copernicus project and the programs that contribute to it.",
+            "type": "str"
+        },
+        {
+            "name": "distribution_statement",
+            "value": "These data follow Copernicus standards; they are public and free of charge. User assumes all risk for use of data. User must display citation in any publication or product using data. User must contact PI prior to any commercial use of data.",
+            "type": "str"
+        },
+        {
+            "name": "doi",
+            "value": "https://doi.org/10.13155/59938 https://doi.org/10.13155/40846 https://doi.org/10.13155/53381 https://doi.org/10.13155/36230 https://doi.org/10.13155/43494",
+            "type": "str"
+        },
+        {
+            "name": "pi_name",
+            "value": "",
+            "type": "str"
+        },
+        {
+            "name": "qc_manual",
+            "value": "Recommendations for in-situ data Near Real Time Quality Control https://doi.org/10.13155/36230",
+            "type": "str"
+        },
+        {
+            "name": "contact",
+            "value": "data.centre@socib.es cmems-service@ifremer.fr",
+            "type": "str"
+        },
+        {
+            "name": "author",
+            "value": "Coriolis for Copernicus Marine service",
+            "type": "str"
+        },
+        {
+            "name": "id",
+            "value": "GL_PR_CT_IF000657_202012",
+            "type": "str"
+        },
+        {
+            "name": "netcdf_version",
+            "value": "netCDF-4 classic model",
+            "type": "str"
+        },
+        {
+            "name": "format_version",
+            "value": "1.4",
+            "type": "str"
+        },
+        {
+            "name": "Conventions",
+            "value": "CF-1.6 Copernicus-InSituTAC-FormatManual-1.41 Copernicus-InSituTAC-SRD-1.5 Copernicus-InSituTAC-ParametersList-3.2.0",
+            "type": "str"
+        },
+        {
+            "name": "date_update",
+            "value": "2021-01-07T16:13:29Z",
+            "type": "str"
+        },
+        {
+            "name": "history",
+            "value": "2021-01-07T16:13:29Z : Creation",
+            "type": "str"
+        }
+    ],
+    "variables": [
+        {
+            "name": "TIME",
+            "type": "f8",
+            "fill_value": null,
+            "dimensions": [
+                "TIME"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Time",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "time",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "days since 1950-01-01T00:00:00Z",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": -90000.0,
+                    "type": "float64"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 90000.0,
+                    "type": "float64"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "axis",
+                    "value": "T",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "TIME_QC",
+                    "type": "str"
+                },
+                {
+                    "name": "calendar",
+                    "value": "standard",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "TIME_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Time quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "LATITUDE",
+            "type": "f4",
+            "fill_value": null,
+            "dimensions": [
+                "LATITUDE"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Latitude of each location",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "latitude",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degree_north",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": -90.0,
+                    "type": "float64"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 90.0,
+                    "type": "float64"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "axis",
+                    "value": "Y",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "POSITION_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "LONGITUDE",
+            "type": "f4",
+            "fill_value": null,
+            "dimensions": [
+                "LONGITUDE"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Longitude of each location",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "longitude",
+                    "type": "str"
+                },
+                {
+                    "name": "units",
+                    "value": "degree_east",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": -180.0,
+                    "type": "float64"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 180.0,
+                    "type": "float64"
+                },
+                {
+                    "name": "uncertainty",
+                    "value": " ",
+                    "type": "str"
+                },
+                {
+                    "name": "axis",
+                    "value": "X",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "POSITION_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "POSITION_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "POSITION"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Position quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "DC_REFERENCE",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME",
+                "STRING32"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Station/Location unique identifier in data centre",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Data centre convention",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "DIRECTION",
+            "type": "S1",
+            "fill_value": " ",
+            "dimensions": [
+                "TIME"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Direction of the profiles",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "A: ascending profile, D: descending profile",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "PRES",
+            "type": "f4",
+            "fill_value": 9.969209968386869e+36,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "units",
+                    "value": "dbar",
+                    "type": "str"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Sea pressure",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_pressure",
+                    "type": "str"
+                },
+                {
+                    "name": "axis",
+                    "value": "Z",
+                    "type": "str"
+                },
+                {
+                    "name": "positive",
+                    "value": "down",
+                    "type": "str"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "PRES_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "PRES_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Sea pressure quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "TEMP",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "units",
+                    "value": "degrees_C",
+                    "type": "str"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Sea temperature",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_temperature",
+                    "type": "str"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.001,
+                    "type": "float32"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "TEMP_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "TEMP_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Sea temperature quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "PSAL",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "units",
+                    "value": "0.001",
+                    "type": "str"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Practical salinity",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_practical_salinity",
+                    "type": "str"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "PSAL_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "PSAL_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Practical salinity quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "CNDC",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "units",
+                    "value": "S m-1",
+                    "type": "str"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Electrical conductivity",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_electrical_conductivity",
+                    "type": "str"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.001,
+                    "type": "float32"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "CNDC_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "CNDC_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Electrical conductivity quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "CPHL",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "units",
+                    "value": "mg m-3",
+                    "type": "str"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Chlorophyll-a",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "mass_concentration_of_chlorophyll_a_in_sea_water",
+                    "type": "str"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.001,
+                    "type": "float32"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "CPHL_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "CPHL_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Chlorophyll-a quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "OSAT",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "units",
+                    "value": "%",
+                    "type": "str"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Oxygen saturation",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "fractional_saturation_of_oxygen_in_sea_water",
+                    "type": "str"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "OSAT_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "OSAT_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Oxygen saturation quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "PHPH",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "units",
+                    "value": "1",
+                    "type": "str"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Ph",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_ph_reported_on_total_scale",
+                    "type": "str"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.001,
+                    "type": "float32"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "PHPH_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "PHPH_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Ph quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "TUR4",
+            "type": "i4",
+            "fill_value": -2147483647,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "units",
+                    "value": "1",
+                    "type": "str"
+                },
+                {
+                    "name": "long_name",
+                    "value": "Turbidity",
+                    "type": "str"
+                },
+                {
+                    "name": "standard_name",
+                    "value": "sea_water_turbidity",
+                    "type": "str"
+                },
+                {
+                    "name": "scale_factor",
+                    "value": 0.0010000000474974513,
+                    "type": "float32"
+                },
+                {
+                    "name": "add_offset",
+                    "value": 0.0,
+                    "type": "float32"
+                },
+                {
+                    "name": "data_mode",
+                    "value": "R",
+                    "type": "str"
+                },
+                {
+                    "name": "ancillary_variables",
+                    "value": "TUR4_QC",
+                    "type": "str"
+                }
+            ]
+        },
+        {
+            "name": "TUR4_QC",
+            "type": "i1",
+            "fill_value": -127,
+            "dimensions": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attributes": [
+                {
+                    "name": "long_name",
+                    "value": "Turbidity quality flag",
+                    "type": "str"
+                },
+                {
+                    "name": "conventions",
+                    "value": "Copernicus Marine In Situ reference table 2",
+                    "type": "str"
+                },
+                {
+                    "name": "valid_min",
+                    "value": 0,
+                    "type": "int8"
+                },
+                {
+                    "name": "valid_max",
+                    "value": 9,
+                    "type": "int8"
+                },
+                {
+                    "name": "flag_values",
+                    "value": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9
+                    ],
+                    "type": "ndarray",
+                    "type_element": "int8"
+                },
+                {
+                    "name": "flag_meanings",
+                    "value": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                    "type": "str"
+                }
+            ]
+        }
+    ]
+}

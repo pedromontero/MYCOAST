@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="variables dictionary only uses name_nc and columns names in the pandas dataframe is build from it.">
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="all variables except currenmeter varialbes are included">
+      <change afterPath="$PROJECT_DIR$/mycoast/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycoast/vector_transformations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platform/platform_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform_nc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/platform/datos" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/TRABALLO_CASA/PYTHON/li4mohid" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -51,7 +54,7 @@
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\dir_structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.platform_nc">
+  <component name="RunManager" selected="Python.nc_struct_to_json">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,9 +162,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.nc_struct_to_json" />
         <item itemvalue="Python.platform_nc" />
         <item itemvalue="Python.json_struct_to_nc" />
-        <item itemvalue="Python.nc_struct_to_json" />
         <item itemvalue="Python.dir_structure" />
         <item itemvalue="Python.json_struct_to_nc" />
       </list>
@@ -302,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611641672697</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="all variables except currenmeter varialbes are included">
+      <created>1611741142201</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611741142201</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,6 +346,7 @@
     <MESSAGE value="variables writting with qc and dm finished.&#10;Needed properties for each variable to write the netcdf are stored in the dictionary variables. With this dictionary a pandas df is created at the begining. Then this df is used to write the netcdf file" />
     <MESSAGE value="several variables are included" />
     <MESSAGE value="variables dictionary only uses name_nc and columns names in the pandas dataframe is build from it." />
-    <option name="LAST_COMMIT_MESSAGE" value="variables dictionary only uses name_nc and columns names in the pandas dataframe is build from it." />
+    <MESSAGE value="all variables except currenmeter varialbes are included" />
+    <option name="LAST_COMMIT_MESSAGE" value="all variables except currenmeter varialbes are included" />
   </component>
 </project>
