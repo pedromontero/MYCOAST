@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="Cleaning code">
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="all variables except currenmeter varialbes are included">
+      <change afterPath="$PROJECT_DIR$/mycoast/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycoast/vector_transformations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform_nc.py" afterDir="false" />
     </list>
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,19 +39,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/json_struct_to_nc" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/TRABALLO_CASA/PYTHON/li4mohid" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\platform\datos" />
+      <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\platform" />
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\json_struct_to_nc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\data\in" />
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\data\out" />
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\dir_structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.json_struct_to_nc">
+  <component name="RunManager" selected="Python.nc_struct_to_json">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,7 +97,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-
     <configuration name="json_struct_to_nc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,13 +139,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="platform_nc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MYCOAST" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\venv38\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/platform" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/platform/platform_nc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.json_struct_to_nc" />
         <item itemvalue="Python.nc_struct_to_json" />
+        <item itemvalue="Python.platform_nc" />
+        <item itemvalue="Python.json_struct_to_nc" />
         <item itemvalue="Python.dir_structure" />
-        <item itemvalue="Python.dir_structure" />
-        <item itemvalue="Python.dir_structure" />
+        <item itemvalue="Python.json_struct_to_nc" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +249,70 @@
       <option name="project" value="LOCAL" />
       <updated>1610009248557</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="platform">
+      <created>1610971790210</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610971790210</updated>
+    </task>
+    <task id="LOCAL-00012" summary="platform">
+      <created>1610972180116</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610972180116</updated>
+    </task>
+    <task id="LOCAL-00013" summary="static values included">
+      <created>1611240896927</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611240896927</updated>
+    </task>
+    <task id="LOCAL-00014" summary="first tests with variables: &#10;depth problem solved. It is included in the innitial dictionary.&#10;Current problem with int32 when writing netcdf">
+      <created>1611476677461</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611476677461</updated>
+    </task>
+    <task id="LOCAL-00015" summary="cortegada station json">
+      <created>1611476760261</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611476760261</updated>
+    </task>
+    <task id="LOCAL-00016" summary="variables writting with qc and dm finished.&#10;Needed properties for each variable to write the netcdf are stored in the dictionary variables. With this dictionary a pandas df is created at the begining. Then this df is used to write the netcdf file">
+      <created>1611555508383</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611555508383</updated>
+    </task>
+    <task id="LOCAL-00017" summary="several variables are included">
+      <created>1611640728805</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611640728806</updated>
+    </task>
+    <task id="LOCAL-00018" summary="variables dictionary only uses name_nc and columns names in the pandas dataframe is build from it.">
+      <created>1611641672697</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611641672697</updated>
+    </task>
+    <task id="LOCAL-00019" summary="all variables except currenmeter varialbes are included">
+      <created>1611741142201</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611741142201</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +338,15 @@
     <MESSAGE value="If _FillValue is none then fill_value = null" />
     <MESSAGE value="_Fillvalue is read from json field fill_value&#10;Cleaning code" />
     <MESSAGE value="Cleaning code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaning code" />
+    <MESSAGE value="readme" />
+    <MESSAGE value="platform" />
+    <MESSAGE value="static values included" />
+    <MESSAGE value="first tests with variables: &#10;depth problem solved. It is included in the innitial dictionary.&#10;Current problem with int32 when writing netcdf" />
+    <MESSAGE value="cortegada station json" />
+    <MESSAGE value="variables writting with qc and dm finished.&#10;Needed properties for each variable to write the netcdf are stored in the dictionary variables. With this dictionary a pandas df is created at the begining. Then this df is used to write the netcdf file" />
+    <MESSAGE value="several variables are included" />
+    <MESSAGE value="variables dictionary only uses name_nc and columns names in the pandas dataframe is build from it." />
+    <MESSAGE value="all variables except currenmeter varialbes are included" />
+    <option name="LAST_COMMIT_MESSAGE" value="all variables except currenmeter varialbes are included" />
   </component>
 </project>

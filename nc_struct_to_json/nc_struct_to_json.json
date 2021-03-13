@@ -1,4 +1,4 @@
 {
-  "nc_file": "../data/in/IR_WS_MO_6100430_20201229.nc",
-  "json_file":  "../data/out/nc_header.json"
+  "nc_file": "../data/in/GL_PR_CT_IF000657_202012.nc",
+  "json_file":  "../data/out/CTD_IFREMER_MES.json"
 }

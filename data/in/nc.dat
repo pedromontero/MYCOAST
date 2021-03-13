@@ -1,0 +1,1605 @@
+netcdf IR_TS_MO_6201038_20210117 {
+dimensions:
+	TIME = 24 ;
+	DEPTH = 5 ;
+	LATITUDE = 24 ;
+	LONGITUDE = 24 ;
+	POSITION = 24 ;
+variables:
+	double TIME(TIME) ;
+		TIME:long_name = "Time" ;
+		TIME:standard_name = "time" ;
+		TIME:units = "days since 1950-01-01T00:00:00Z" ;
+		TIME:valid_min = -90000.f ;
+		TIME:valid_max = 90000.f ;
+		TIME:QC_indicator = 1 ;
+		TIME:uncertainty = " " ;
+		TIME:comment = " " ;
+		TIME:axis = "T" ;
+		TIME:ancillary_variables = "TIME_QC" ;
+		TIME:calendar = "standard" ;
+	byte TIME_QC(TIME) ;
+		TIME_QC:long_name = "Time quality flag" ;
+		TIME_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		TIME_QC:_FillValue = -127b ;
+		TIME_QC:valid_min = 0b ;
+		TIME_QC:valid_max = 9b ;
+		TIME_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		TIME_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	float LATITUDE(LATITUDE) ;
+		LATITUDE:long_name = "Latitude of each location" ;
+		LATITUDE:standard_name = "latitude" ;
+		LATITUDE:units = "degree_north" ;
+		LATITUDE:valid_min = -90.f ;
+		LATITUDE:valid_max = 90.f ;
+		LATITUDE:QC_indicator = 1 ;
+		LATITUDE:uncertainty = " " ;
+		LATITUDE:comment = " " ;
+		LATITUDE:axis = "Y" ;
+		LATITUDE:ancillary_variables = "POSITION_QC" ;
+	float LONGITUDE(LONGITUDE) ;
+		LONGITUDE:long_name = "Longitude of each location" ;
+		LONGITUDE:standard_name = "longitude" ;
+		LONGITUDE:units = "degree_east" ;
+		LONGITUDE:valid_min = -180.f ;
+		LONGITUDE:valid_max = 180.f ;
+		LONGITUDE:QC_indicator = 1 ;
+		LONGITUDE:uncertainty = " " ;
+		LONGITUDE:comment = " " ;
+		LONGITUDE:axis = "X" ;
+		LONGITUDE:ancillary_variables = "POSITION_QC" ;
+	byte POSITION_QC(POSITION) ;
+		POSITION_QC:long_name = "Position quality flag" ;
+		POSITION_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		POSITION_QC:_FillValue = -127b ;
+		POSITION_QC:valid_min = 0b ;
+		POSITION_QC:valid_max = 9b ;
+		POSITION_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		POSITION_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	float DEPH(TIME, DEPTH) ;
+		DEPH:long_name = "Depth" ;
+		DEPH:standard_name = "depth" ;
+		DEPH:_FillValue = 9.96921e+36f ;
+		DEPH:units = "m" ;
+		DEPH:positive = "down" ;
+		DEPH:valid_min = -12000.f ;
+		DEPH:valid_max = 12000.f ;
+		DEPH:uncertainty = " " ;
+		DEPH:comment = " " ;
+		DEPH:axis = "Z" ;
+		DEPH:reference = "sea_level" ;
+		DEPH:data_mode = "R" ;
+		DEPH:ancillary_variables = "DEPH_QC DEPH_DM" ;
+	byte DEPH_QC(TIME, DEPTH) ;
+		DEPH_QC:long_name = "Depth quality flag" ;
+		DEPH_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		DEPH_QC:_FillValue = -127b ;
+		DEPH_QC:valid_min = 0b ;
+		DEPH_QC:valid_max = 9b ;
+		DEPH_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		DEPH_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char DEPH_DM(TIME, DEPTH) ;
+		DEPH_DM:long_name = "Depth method of data processing" ;
+		DEPH_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		DEPH_DM:flag_values = "R, A, D" ;
+		DEPH_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		DEPH_DM:_FillValue = " " ;
+	int DRYT(TIME, DEPTH) ;
+		DRYT:standard_name = "air_temperature" ;
+		DRYT:units = "degrees_C" ;
+		DRYT:_FillValue = -2147483647 ;
+		DRYT:add_offset = 0.f ;
+		DRYT:scale_factor = 0.001f ;
+		DRYT:long_name = "Air temperature in dry bulb" ;
+		DRYT:valid_min = -1000 ;
+		DRYT:valid_max = 39900 ;
+		DRYT:comment = " " ;
+		DRYT:uncertainty = " " ;
+		DRYT:accuracy = " " ;
+		DRYT:precision = " " ;
+		DRYT:resolution = " " ;
+		DRYT:cell_methods = " " ;
+		DRYT:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		DRYT:type_of_analysis = " " ;
+		DRYT:sensor_depth = -4.5f ;
+		DRYT:sensor_mount = " " ;
+		DRYT:sensor_orientation = " " ;
+		DRYT:data_mode = "R" ;
+		DRYT:ancillary_variables = "DRYT_QC DRYT_DM" ;
+	byte DRYT_QC(TIME, DEPTH) ;
+		DRYT_QC:long_name = "Air temperature in dry bulb quality flag" ;
+		DRYT_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		DRYT_QC:_FillValue = -127b ;
+		DRYT_QC:valid_min = 0b ;
+		DRYT_QC:valid_max = 9b ;
+		DRYT_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		DRYT_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char DRYT_DM(TIME, DEPTH) ;
+		DRYT_DM:long_name = "Air temperature in dry bulb method of data processing" ;
+		DRYT_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		DRYT_DM:flag_values = "R, A, D" ;
+		DRYT_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		DRYT_DM:_FillValue = " " ;
+	int WSPD(TIME, DEPTH) ;
+		WSPD:standard_name = "wind_speed" ;
+		WSPD:units = "m s-1" ;
+		WSPD:_FillValue = -2147483647 ;
+		WSPD:add_offset = 0.f ;
+		WSPD:scale_factor = 0.001f ;
+		WSPD:long_name = "Horizontal wind speed" ;
+		WSPD:valid_min = 0 ;
+		WSPD:valid_max = 45000 ;
+		WSPD:comment = " " ;
+		WSPD:uncertainty = " " ;
+		WSPD:accuracy = " " ;
+		WSPD:precision = " " ;
+		WSPD:resolution = " " ;
+		WSPD:cell_methods = " " ;
+		WSPD:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		WSPD:type_of_analysis = " " ;
+		WSPD:sensor_depth = -7.f ;
+		WSPD:sensor_mount = " " ;
+		WSPD:sensor_orientation = " " ;
+		WSPD:data_mode = "R" ;
+		WSPD:ancillary_variables = "WSPD_QC WSPD_DM" ;
+	byte WSPD_QC(TIME, DEPTH) ;
+		WSPD_QC:long_name = "Horizontal wind speed quality flag" ;
+		WSPD_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		WSPD_QC:_FillValue = -127b ;
+		WSPD_QC:valid_min = 0b ;
+		WSPD_QC:valid_max = 9b ;
+		WSPD_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		WSPD_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char WSPD_DM(TIME, DEPTH) ;
+		WSPD_DM:long_name = "Horizontal wind speed method of data processing" ;
+		WSPD_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		WSPD_DM:flag_values = "R, A, D" ;
+		WSPD_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		WSPD_DM:_FillValue = " " ;
+	int WDIR(TIME, DEPTH) ;
+		WDIR:standard_name = "wind_from_direction" ;
+		WDIR:units = "degree" ;
+		WDIR:_FillValue = -2147483647 ;
+		WDIR:add_offset = 0.f ;
+		WDIR:scale_factor = 0.001f ;
+		WDIR:long_name = "Wind from direction relative true north" ;
+		WDIR:valid_min = 0 ;
+		WDIR:valid_max = 360000 ;
+		WDIR:comment = " " ;
+		WDIR:uncertainty = " " ;
+		WDIR:accuracy = " " ;
+		WDIR:precision = " " ;
+		WDIR:resolution = " " ;
+		WDIR:cell_methods = " " ;
+		WDIR:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		WDIR:type_of_analysis = " " ;
+		WDIR:sensor_depth = -7.f ;
+		WDIR:sensor_mount = " " ;
+		WDIR:sensor_orientation = " " ;
+		WDIR:data_mode = "R" ;
+		WDIR:ancillary_variables = "WDIR_QC WDIR_DM" ;
+	byte WDIR_QC(TIME, DEPTH) ;
+		WDIR_QC:long_name = "Wind from direction relative true north quality flag" ;
+		WDIR_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		WDIR_QC:_FillValue = -127b ;
+		WDIR_QC:valid_min = 0b ;
+		WDIR_QC:valid_max = 9b ;
+		WDIR_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		WDIR_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char WDIR_DM(TIME, DEPTH) ;
+		WDIR_DM:long_name = "Wind from direction relative true north method of data processing" ;
+		WDIR_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		WDIR_DM:flag_values = "R, A, D" ;
+		WDIR_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		WDIR_DM:_FillValue = " " ;
+	int RELH(TIME, DEPTH) ;
+		RELH:standard_name = "relative_humidity" ;
+		RELH:units = "%" ;
+		RELH:_FillValue = -2147483647 ;
+		RELH:add_offset = 0.f ;
+		RELH:scale_factor = 0.001f ;
+		RELH:long_name = "Relative humidity" ;
+		RELH:valid_min = 0 ;
+		RELH:valid_max = 100010 ;
+		RELH:comment = " " ;
+		RELH:uncertainty = " " ;
+		RELH:accuracy = " " ;
+		RELH:precision = " " ;
+		RELH:resolution = " " ;
+		RELH:cell_methods = " " ;
+		RELH:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		RELH:type_of_analysis = " " ;
+		RELH:sensor_depth = -4.5f ;
+		RELH:sensor_mount = " " ;
+		RELH:sensor_orientation = " " ;
+		RELH:data_mode = "R" ;
+		RELH:ancillary_variables = "RELH_QC RELH_DM" ;
+	byte RELH_QC(TIME, DEPTH) ;
+		RELH_QC:long_name = "Relative humidity quality flag" ;
+		RELH_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		RELH_QC:_FillValue = -127b ;
+		RELH_QC:valid_min = 0b ;
+		RELH_QC:valid_max = 9b ;
+		RELH_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		RELH_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char RELH_DM(TIME, DEPTH) ;
+		RELH_DM:long_name = "Relative humidity method of data processing" ;
+		RELH_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		RELH_DM:flag_values = "R, A, D" ;
+		RELH_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		RELH_DM:_FillValue = " " ;
+	int GSPD(TIME, DEPTH) ;
+		GSPD:standard_name = "wind_speed_of_gust" ;
+		GSPD:units = "m s-1" ;
+		GSPD:_FillValue = -2147483647 ;
+		GSPD:add_offset = 0.f ;
+		GSPD:scale_factor = 0.001f ;
+		GSPD:long_name = "Gust wind speed" ;
+		GSPD:valid_min = 0 ;
+		GSPD:valid_max = 70000 ;
+		GSPD:comment = " " ;
+		GSPD:uncertainty = " " ;
+		GSPD:accuracy = " " ;
+		GSPD:precision = " " ;
+		GSPD:resolution = " " ;
+		GSPD:cell_methods = " " ;
+		GSPD:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		GSPD:type_of_analysis = " " ;
+		GSPD:sensor_depth = -7.f ;
+		GSPD:sensor_mount = " " ;
+		GSPD:sensor_orientation = " " ;
+		GSPD:data_mode = "R" ;
+		GSPD:ancillary_variables = "GSPD_QC GSPD_DM" ;
+	byte GSPD_QC(TIME, DEPTH) ;
+		GSPD_QC:long_name = "Gust wind speed quality flag" ;
+		GSPD_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		GSPD_QC:_FillValue = -127b ;
+		GSPD_QC:valid_min = 0b ;
+		GSPD_QC:valid_max = 9b ;
+		GSPD_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		GSPD_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char GSPD_DM(TIME, DEPTH) ;
+		GSPD_DM:long_name = "Gust wind speed method of data processing" ;
+		GSPD_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		GSPD_DM:flag_values = "R, A, D" ;
+		GSPD_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		GSPD_DM:_FillValue = " " ;
+	int GDIR(TIME, DEPTH) ;
+		GDIR:standard_name = "wind_gust_from_direction" ;
+		GDIR:units = "degree" ;
+		GDIR:_FillValue = -2147483647 ;
+		GDIR:add_offset = 0.f ;
+		GDIR:scale_factor = 0.001f ;
+		GDIR:long_name = "Gust wind from direction relative true north" ;
+		GDIR:valid_min = 0 ;
+		GDIR:valid_max = 360000 ;
+		GDIR:comment = " " ;
+		GDIR:uncertainty = " " ;
+		GDIR:accuracy = " " ;
+		GDIR:precision = " " ;
+		GDIR:resolution = " " ;
+		GDIR:cell_methods = " " ;
+		GDIR:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		GDIR:type_of_analysis = " " ;
+		GDIR:sensor_depth = -7.f ;
+		GDIR:sensor_mount = " " ;
+		GDIR:sensor_orientation = " " ;
+		GDIR:data_mode = "R" ;
+		GDIR:ancillary_variables = "GDIR_QC GDIR_DM" ;
+	byte GDIR_QC(TIME, DEPTH) ;
+		GDIR_QC:long_name = "Gust wind from direction relative true north quality flag" ;
+		GDIR_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		GDIR_QC:_FillValue = -127b ;
+		GDIR_QC:valid_min = 0b ;
+		GDIR_QC:valid_max = 9b ;
+		GDIR_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		GDIR_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char GDIR_DM(TIME, DEPTH) ;
+		GDIR_DM:long_name = "Gust wind from direction relative true north method of data processing" ;
+		GDIR_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		GDIR_DM:flag_values = "R, A, D" ;
+		GDIR_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		GDIR_DM:_FillValue = " " ;
+	int DEWT(TIME, DEPTH) ;
+		DEWT:standard_name = "dew_point_temperature" ;
+		DEWT:units = "degrees_C" ;
+		DEWT:_FillValue = -2147483647 ;
+		DEWT:add_offset = 0.f ;
+		DEWT:scale_factor = 0.001f ;
+		DEWT:long_name = "Dew point temperature" ;
+		DEWT:valid_min = -10000 ;
+		DEWT:valid_max = 40000 ;
+		DEWT:comment = " " ;
+		DEWT:uncertainty = " " ;
+		DEWT:accuracy = " " ;
+		DEWT:precision = " " ;
+		DEWT:resolution = " " ;
+		DEWT:cell_methods = " " ;
+		DEWT:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		DEWT:type_of_analysis = " " ;
+		DEWT:sensor_depth = -4.5f ;
+		DEWT:sensor_mount = " " ;
+		DEWT:sensor_orientation = " " ;
+		DEWT:data_mode = "R" ;
+		DEWT:ancillary_variables = "DEWT_QC DEWT_DM" ;
+	byte DEWT_QC(TIME, DEPTH) ;
+		DEWT_QC:long_name = "Dew point temperature quality flag" ;
+		DEWT_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		DEWT_QC:_FillValue = -127b ;
+		DEWT_QC:valid_min = 0b ;
+		DEWT_QC:valid_max = 9b ;
+		DEWT_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		DEWT_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char DEWT_DM(TIME, DEPTH) ;
+		DEWT_DM:long_name = "Dew point temperature method of data processing" ;
+		DEWT_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		DEWT_DM:flag_values = "R, A, D" ;
+		DEWT_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		DEWT_DM:_FillValue = " " ;
+	int HCSP(TIME, DEPTH) ;
+		HCSP:standard_name = "sea_water_speed" ;
+		HCSP:units = "m s-1" ;
+		HCSP:_FillValue = -2147483647 ;
+		HCSP:add_offset = 0.f ;
+		HCSP:scale_factor = 0.001f ;
+		HCSP:long_name = "Horizontal current speed" ;
+		HCSP:valid_min = 0 ;
+		HCSP:valid_max = 5000 ;
+		HCSP:comment = " " ;
+		HCSP:uncertainty = " " ;
+		HCSP:accuracy = " " ;
+		HCSP:precision = " " ;
+		HCSP:resolution = " " ;
+		HCSP:cell_methods = " " ;
+		HCSP:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		HCSP:type_of_analysis = " " ;
+		HCSP:sensor_depth = 8.f ;
+		HCSP:sensor_mount = " " ;
+		HCSP:sensor_orientation = " " ;
+		HCSP:data_mode = "R" ;
+		HCSP:ancillary_variables = "HCSP_QC HCSP_DM" ;
+	byte HCSP_QC(TIME, DEPTH) ;
+		HCSP_QC:long_name = "Horizontal current speed quality flag" ;
+		HCSP_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		HCSP_QC:_FillValue = -127b ;
+		HCSP_QC:valid_min = 0b ;
+		HCSP_QC:valid_max = 9b ;
+		HCSP_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		HCSP_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char HCSP_DM(TIME, DEPTH) ;
+		HCSP_DM:long_name = "Horizontal current speed method of data processing" ;
+		HCSP_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		HCSP_DM:flag_values = "R, A, D" ;
+		HCSP_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		HCSP_DM:_FillValue = " " ;
+	int HCDT(TIME, DEPTH) ;
+		HCDT:standard_name = "direction_of_sea_water_velocity" ;
+		HCDT:units = "degree" ;
+		HCDT:_FillValue = -2147483647 ;
+		HCDT:add_offset = 0.f ;
+		HCDT:scale_factor = 0.001f ;
+		HCDT:long_name = "Current to direction relative true north" ;
+		HCDT:valid_min = 0 ;
+		HCDT:valid_max = 360000 ;
+		HCDT:comment = " " ;
+		HCDT:uncertainty = " " ;
+		HCDT:accuracy = " " ;
+		HCDT:precision = " " ;
+		HCDT:resolution = " " ;
+		HCDT:cell_methods = " " ;
+		HCDT:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		HCDT:type_of_analysis = " " ;
+		HCDT:sensor_depth = 8.f ;
+		HCDT:sensor_mount = " " ;
+		HCDT:sensor_orientation = " " ;
+		HCDT:data_mode = "R" ;
+		HCDT:ancillary_variables = "HCDT_QC HCDT_DM" ;
+	byte HCDT_QC(TIME, DEPTH) ;
+		HCDT_QC:long_name = "Current to direction relative true north quality flag" ;
+		HCDT_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		HCDT_QC:_FillValue = -127b ;
+		HCDT_QC:valid_min = 0b ;
+		HCDT_QC:valid_max = 9b ;
+		HCDT_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		HCDT_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char HCDT_DM(TIME, DEPTH) ;
+		HCDT_DM:long_name = "Current to direction relative true north method of data processing" ;
+		HCDT_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		HCDT_DM:flag_values = "R, A, D" ;
+		HCDT_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		HCDT_DM:_FillValue = " " ;
+	int TEMP(TIME, DEPTH) ;
+		TEMP:standard_name = "sea_water_temperature" ;
+		TEMP:units = "degrees_C" ;
+		TEMP:_FillValue = -2147483647 ;
+		TEMP:add_offset = 0.f ;
+		TEMP:scale_factor = 0.001f ;
+		TEMP:long_name = "Sea temperature" ;
+		TEMP:valid_min = 0 ;
+		TEMP:valid_max = 29800 ;
+		TEMP:comment = " " ;
+		TEMP:uncertainty = " " ;
+		TEMP:accuracy = " " ;
+		TEMP:precision = " " ;
+		TEMP:resolution = " " ;
+		TEMP:cell_methods = " " ;
+		TEMP:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		TEMP:type_of_analysis = " " ;
+		TEMP:sensor_depth = 6.f ;
+		TEMP:sensor_mount = " " ;
+		TEMP:sensor_orientation = " " ;
+		TEMP:data_mode = "R" ;
+		TEMP:ancillary_variables = "TEMP_QC TEMP_DM" ;
+	byte TEMP_QC(TIME, DEPTH) ;
+		TEMP_QC:long_name = "Sea temperature quality flag" ;
+		TEMP_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		TEMP_QC:_FillValue = -127b ;
+		TEMP_QC:valid_min = 0b ;
+		TEMP_QC:valid_max = 9b ;
+		TEMP_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		TEMP_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char TEMP_DM(TIME, DEPTH) ;
+		TEMP_DM:long_name = "Sea temperature method of data processing" ;
+		TEMP_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		TEMP_DM:flag_values = "R, A, D" ;
+		TEMP_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		TEMP_DM:_FillValue = " " ;
+	int PSAL(TIME, DEPTH) ;
+		PSAL:standard_name = "sea_water_practical_salinity" ;
+		PSAL:units = "0.001" ;
+		PSAL:_FillValue = -2147483647 ;
+		PSAL:add_offset = 0.f ;
+		PSAL:scale_factor = 0.001f ;
+		PSAL:long_name = "Practical salinity" ;
+		PSAL:valid_min = 10000 ;
+		PSAL:valid_max = 38000 ;
+		PSAL:comment = " " ;
+		PSAL:uncertainty = " " ;
+		PSAL:accuracy = " " ;
+		PSAL:precision = " " ;
+		PSAL:resolution = " " ;
+		PSAL:cell_methods = " " ;
+		PSAL:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		PSAL:type_of_analysis = " " ;
+		PSAL:sensor_depth = 6.f ;
+		PSAL:sensor_mount = " " ;
+		PSAL:sensor_orientation = " " ;
+		PSAL:data_mode = "R" ;
+		PSAL:ancillary_variables = "PSAL_QC PSAL_DM" ;
+	byte PSAL_QC(TIME, DEPTH) ;
+		PSAL_QC:long_name = "Practical salinity quality flag" ;
+		PSAL_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		PSAL_QC:_FillValue = -127b ;
+		PSAL_QC:valid_min = 0b ;
+		PSAL_QC:valid_max = 9b ;
+		PSAL_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		PSAL_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char PSAL_DM(TIME, DEPTH) ;
+		PSAL_DM:long_name = "Practical salinity method of data processing" ;
+		PSAL_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		PSAL_DM:flag_values = "R, A, D" ;
+		PSAL_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		PSAL_DM:_FillValue = " " ;
+	int CNDC(TIME, DEPTH) ;
+		CNDC:standard_name = "sea_water_electrical_conductivity" ;
+		CNDC:units = "S m-1" ;
+		CNDC:_FillValue = -2147483647 ;
+		CNDC:add_offset = 0.f ;
+		CNDC:scale_factor = 0.001f ;
+		CNDC:long_name = "Electrical conductivity" ;
+		CNDC:valid_min = 0 ;
+		CNDC:valid_max = 70000 ;
+		CNDC:comment = " " ;
+		CNDC:uncertainty = " " ;
+		CNDC:accuracy = " " ;
+		CNDC:precision = " " ;
+		CNDC:resolution = " " ;
+		CNDC:cell_methods = " " ;
+		CNDC:coordinates = "TIME LATITUDE LONGITUDE DEPTH" ;
+		CNDC:type_of_analysis = " " ;
+		CNDC:sensor_depth = 6.f ;
+		CNDC:sensor_mount = " " ;
+		CNDC:sensor_orientation = " " ;
+		CNDC:data_mode = "R" ;
+		CNDC:ancillary_variables = "CNDC_QC CNDC_DM" ;
+	byte CNDC_QC(TIME, DEPTH) ;
+		CNDC_QC:long_name = "Electrical conductivity quality flag" ;
+		CNDC_QC:conventions = "Copernicus Marine In Situ reference table 2" ;
+		CNDC_QC:_FillValue = -127b ;
+		CNDC_QC:valid_min = 0b ;
+		CNDC_QC:valid_max = 9b ;
+		CNDC_QC:flag_values = 0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b ;
+		CNDC_QC:flag_meanings = "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value" ;
+	char CNDC_DM(TIME, DEPTH) ;
+		CNDC_DM:long_name = "Electrical conductivity method of data processing" ;
+		CNDC_DM:conventions = "Copernicus Marine In Situ reference table 1" ;
+		CNDC_DM:flag_values = "R, A, D" ;
+		CNDC_DM:flag_meanings = "real-time adjusted-in-real-time delayed-mode" ;
+		CNDC_DM:_FillValue = " " ;
+
+// global attributes:
+		:platform_code = "6201038" ;
+		:platform_name = "Cortegada platform" ;
+		:data_mode = "R" ;
+		:title = "Iberia-Biscay-Ireland Regional Seas - In Situ Observation Copernicus" ;
+		:summary = "" ;
+		:naming_authority = "Copernicus Marine In Situ" ;
+		:id = "IR_TS_MO_6201038_20210117" ;
+		:wmo_platform_code = "6201038" ;
+		:ices_platform_code = " " ;
+		:source = "mooring" ;
+		:source_platform_category_code = "48" ;
+		:institution_edmo_code = "4841 3510 1637" ;
+		:institution = "Technological Institute for the Control of the Marine Environment of Galicia (Spain);MeteoGalicia (Spain);CETMAR Foundation / Marine Technological Center (Spain)" ;
+		:institution_references = "http://www.intecmar.gal/ https://www.meteogalicia.gal/ https://cetmar.org/ http://www.puertos.es" ;
+		:site_code = " " ;
+		:comment = " " ;
+		:contact = "pmontero@intecmar.gal coordinador-clima.meteogalicia@xunta.es storres@cetmar.org cmems-service@puertos.es" ;
+		:area = "North Atlantic Ocean" ;
+		:geospatial_vertical_min = "-7.0" ;
+		:geospatial_vertical_max = "8.0" ;
+		:time_coverage_start = "2021-01-17T00:00:00Z" ;
+		:time_coverage_end = "2021-01-17T23:00:00Z" ;
+		:cdm_data_type = "timeSeries" ;
+		:data_type = "OceanSITES time-series data" ;
+		:bottom_depth = 35 ;
+		:format_version = "1.4" ;
+		:Conventions = "CF-1.6 Copernicus-InSituTAC-FormatManual-1.41 Copernicus-InSituTAC-SRD-1.5 Copernicus-InSituTAC-ParametersList-3.2.0" ;
+		:netcdf_version = "netCDF-4 classic model" ;
+		:references = "http://marine.copernicus.eu http://www.marineinsitu.eu" ;
+		:data_assembly_center = "Puertos del Estado" ;
+		:update_interval = "PT1H" ;
+		:citation = "These data were collected and made freely available by the Copernicus project and the programs that contribute to it. " ;
+		:distribution_statement = "These data follow Copernicus standards; they are public and free of charge. User assumes all risk for use of data. User must display citation in any publication or product using data. User must contact PI prior to any commercial use of data." ;
+		:doi = "https://doi.org/10.13155/59938 https://doi.org/10.13155/40846 https://doi.org/10.13155/53381 https://doi.org/10.13155/36230 https://doi.org/10.13155/43494" ;
+		:pi_name = "PdE" ;
+		:qc_manual = "Recommendations for in-situ data Near Real Time Quality Control https://doi.org/10.13155/36230" ;
+		:date_update = "2021-01-18T12:26:09Z" ;
+		:history = "2021-01-18T12:26:09ZCreation" ;
+		:wmo_inst_type = " " ;
+		:last_date_observation = "2021-01-17T23:00:00Z" ;
+		:last_latitude_observation = "42.6268" ;
+		:last_longitude_observation = "-8.7823" ;
+		:geospatial_lat_min = "42.62682" ;
+		:geospatial_lat_max = "42.62682" ;
+		:geospatial_lon_min = "-8.78233" ;
+		:geospatial_lon_max = "-8.78233" ;
+data:
+
+ TIME = 25949, 25949.0416666667, 25949.0833333333, 25949.125, 
+    25949.1666666667, 25949.2083333333, 25949.25, 25949.2916666667, 
+    25949.3333333333, 25949.375, 25949.4166666667, 25949.4583333333, 25949.5, 
+    25949.5416666667, 25949.5833333333, 25949.625, 25949.6666666667, 
+    25949.7083333333, 25949.75, 25949.7916666667, 25949.8333333333, 
+    25949.875, 25949.9166666667, 25949.9583333333 ;
+
+ TIME_QC = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+    1, 1 ;
+
+ LATITUDE = 42.62682, 42.62682, 42.62682, 42.62682, 42.62682, 42.62682, 
+    42.62682, 42.62682, 42.62682, 42.62682, 42.62682, 42.62682, 42.62682, 
+    42.62682, 42.62682, 42.62682, 42.62682, 42.62682, 42.62682, 42.62682, 
+    42.62682, 42.62682, 42.62682, 42.62682 ;
+
+ LONGITUDE = -8.78233, -8.78233, -8.78233, -8.78233, -8.78233, -8.78233, 
+    -8.78233, -8.78233, -8.78233, -8.78233, -8.78233, -8.78233, -8.78233, 
+    -8.78233, -8.78233, -8.78233, -8.78233, -8.78233, -8.78233, -8.78233, 
+    -8.78233, -8.78233, -8.78233, -8.78233 ;
+
+ POSITION_QC = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+    1, 1, 1 ;
+
+ DEPH =
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8,
+  -7, -4.5, 0.5, 3.5, 8 ;
+
+ DEPH_QC =
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7 ;
+
+ DEPH_DM =
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR",
+  "RRRRR" ;
+
+ DRYT =
+  _, 7000, _, _, _,
+  _, 6500, _, _, _,
+  _, 5870, _, _, _,
+  _, 6080, _, _, _,
+  _, 6910, _, _, _,
+  _, 6620, _, _, _,
+  _, 6630, _, _, _,
+  _, 6450, _, _, _,
+  _, 6710, _, _, _,
+  _, 6730, _, _, _,
+  _, 6810, _, _, _,
+  _, 7650, _, _, _,
+  _, 8800, _, _, _,
+  _, 10030, _, _, _,
+  _, 10790, _, _, _,
+  _, 11370, _, _, _,
+  _, 12140, _, _, _,
+  _, 12700, _, _, _,
+  _, 12820, _, _, _,
+  _, 11720, _, _, _,
+  _, 10000, _, _, _,
+  _, 8990, _, _, _,
+  _, 10690, _, _, _,
+  _, 11240, _, _, _ ;
+
+ DRYT_QC =
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _ ;
+
+ DRYT_DM =
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   " ;
+
+ WSPD =
+  4090, _, _, _, _,
+  4370, _, _, _, _,
+  4010, _, _, _, _,
+  5790, _, _, _, _,
+  4220, _, _, _, _,
+  6170, _, _, _, _,
+  7220, _, _, _, _,
+  5730, _, _, _, _,
+  7850, _, _, _, _,
+  6870, _, _, _, _,
+  7310, _, _, _, _,
+  5730, _, _, _, _,
+  6490, _, _, _, _,
+  5870, _, _, _, _,
+  3440, _, _, _, _,
+  2940, _, _, _, _,
+  2820, _, _, _, _,
+  3380, _, _, _, _,
+  1800, _, _, _, _,
+  610, _, _, _, _,
+  1640, _, _, _, _,
+  2930, _, _, _, _,
+  3520, _, _, _, _,
+  3260, _, _, _, _ ;
+
+ WSPD_QC =
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _ ;
+
+ WSPD_DM =
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    " ;
+
+ WDIR =
+  41000, _, _, _, _,
+  47000, _, _, _, _,
+  48000, _, _, _, _,
+  32000, _, _, _, _,
+  27000, _, _, _, _,
+  42000, _, _, _, _,
+  42000, _, _, _, _,
+  44000, _, _, _, _,
+  42000, _, _, _, _,
+  33000, _, _, _, _,
+  45000, _, _, _, _,
+  36000, _, _, _, _,
+  47000, _, _, _, _,
+  50000, _, _, _, _,
+  36000, _, _, _, _,
+  31000, _, _, _, _,
+  30000, _, _, _, _,
+  16000, _, _, _, _,
+  38000, _, _, _, _,
+  64000, _, _, _, _,
+  23000, _, _, _, _,
+  26000, _, _, _, _,
+  1000, _, _, _, _,
+  13000, _, _, _, _ ;
+
+ WDIR_QC =
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _ ;
+
+ WDIR_DM =
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    " ;
+
+ RELH =
+  _, 82000, _, _, _,
+  _, 84000, _, _, _,
+  _, 84000, _, _, _,
+  _, 80000, _, _, _,
+  _, 74000, _, _, _,
+  _, 78000, _, _, _,
+  _, 83000, _, _, _,
+  _, 83000, _, _, _,
+  _, 84000, _, _, _,
+  _, 86000, _, _, _,
+  _, 85000, _, _, _,
+  _, 84000, _, _, _,
+  _, 81000, _, _, _,
+  _, 79000, _, _, _,
+  _, 78000, _, _, _,
+  _, 77000, _, _, _,
+  _, 76000, _, _, _,
+  _, 74000, _, _, _,
+  _, 74000, _, _, _,
+  _, 79000, _, _, _,
+  _, 85000, _, _, _,
+  _, 88000, _, _, _,
+  _, 84000, _, _, _,
+  _, 80000, _, _, _ ;
+
+ RELH_QC =
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _ ;
+
+ RELH_DM =
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   " ;
+
+ GSPD =
+  4340, _, _, _, _,
+  4840, _, _, _, _,
+  4860, _, _, _, _,
+  5790, _, _, _, _,
+  5900, _, _, _, _,
+  6690, _, _, _, _,
+  7700, _, _, _, _,
+  6260, _, _, _, _,
+  7940, _, _, _, _,
+  8490, _, _, _, _,
+  8460, _, _, _, _,
+  7900, _, _, _, _,
+  7830, _, _, _, _,
+  6190, _, _, _, _,
+  4430, _, _, _, _,
+  4480, _, _, _, _,
+  4030, _, _, _, _,
+  3970, _, _, _, _,
+  3500, _, _, _, _,
+  1510, _, _, _, _,
+  1700, _, _, _, _,
+  3420, _, _, _, _,
+  4800, _, _, _, _,
+  4150, _, _, _, _ ;
+
+ GSPD_QC =
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _ ;
+
+ GSPD_DM =
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    " ;
+
+ GDIR =
+  47000, _, _, _, _,
+  45000, _, _, _, _,
+  49000, _, _, _, _,
+  42000, _, _, _, _,
+  21000, _, _, _, _,
+  41000, _, _, _, _,
+  39000, _, _, _, _,
+  50000, _, _, _, _,
+  41000, _, _, _, _,
+  39000, _, _, _, _,
+  39000, _, _, _, _,
+  36000, _, _, _, _,
+  46000, _, _, _, _,
+  38000, _, _, _, _,
+  38000, _, _, _, _,
+  35000, _, _, _, _,
+  30000, _, _, _, _,
+  23000, _, _, _, _,
+  182000, _, _, _, _,
+  117000, _, _, _, _,
+  89000, _, _, _, _,
+  34000, _, _, _, _,
+  8000, _, _, _, _,
+  67000, _, _, _, _ ;
+
+ GDIR_QC =
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _,
+  1, _, _, _, _ ;
+
+ GDIR_DM =
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    ",
+  "R    " ;
+
+ DEWT =
+  _, 4150, _, _, _,
+  _, 4010, _, _, _,
+  _, 3280, _, _, _,
+  _, 2810, _, _, _,
+  _, 2570, _, _, _,
+  _, 2990, _, _, _,
+  _, 3960, _, _, _,
+  _, 3830, _, _, _,
+  _, 4280, _, _, _,
+  _, 4500, _, _, _,
+  _, 4480, _, _, _,
+  _, 5060, _, _, _,
+  _, 5720, _, _, _,
+  _, 6540, _, _, _,
+  _, 7160, _, _, _,
+  _, 7480, _, _, _,
+  _, 8050, _, _, _,
+  _, 8270, _, _, _,
+  _, 8320, _, _, _,
+  _, 8290, _, _, _,
+  _, 7540, _, _, _,
+  _, 7170, _, _, _,
+  _, 7970, _, _, _,
+  _, 7820, _, _, _ ;
+
+ DEWT_QC =
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _,
+  _, 1, _, _, _ ;
+
+ DEWT_DM =
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   ",
+  " R   " ;
+
+ HCSP =
+  _, _, _, _, 15,
+  _, _, _, _, 388,
+  _, _, _, _, 318,
+  _, _, _, _, 237,
+  _, _, _, _, 208,
+  _, _, _, _, 44,
+  _, _, _, _, 63,
+  _, _, _, _, 188,
+  _, _, _, _, 263,
+  _, _, _, _, 369,
+  _, _, _, _, 830,
+  _, _, _, _, 195,
+  _, _, _, _, 54,
+  _, _, _, _, 220,
+  _, _, _, _, 307,
+  _, _, _, _, 352,
+  _, _, _, _, 259,
+  _, _, _, _, 82,
+  _, _, _, _, 67,
+  _, _, _, _, 132,
+  _, _, _, _, 192,
+  _, _, _, _, 350,
+  _, _, _, _, 433,
+  _, _, _, _, 835 ;
+
+ HCSP_QC =
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 4,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1 ;
+
+ HCSP_DM =
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R" ;
+
+ HCDT =
+  _, _, _, _, 58000,
+  _, _, _, _, 23000,
+  _, _, _, _, 2000,
+  _, _, _, _, 30000,
+  _, _, _, _, 1000,
+  _, _, _, _, 333000,
+  _, _, _, _, 233000,
+  _, _, _, _, 213000,
+  _, _, _, _, 196000,
+  _, _, _, _, 188000,
+  _, _, _, _, 255000,
+  _, _, _, _, 229000,
+  _, _, _, _, 236000,
+  _, _, _, _, 51000,
+  _, _, _, _, 16000,
+  _, _, _, _, 25000,
+  _, _, _, _, 13000,
+  _, _, _, _, 6000,
+  _, _, _, _, 254000,
+  _, _, _, _, 238000,
+  _, _, _, _, 227000,
+  _, _, _, _, 200000,
+  _, _, _, _, 190000,
+  _, _, _, _, 245000 ;
+
+ HCDT_QC =
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1,
+  _, _, _, _, 1 ;
+
+ HCDT_DM =
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R",
+  "    R" ;
+
+ TEMP =
+  _, _, 10754, 11310, _,
+  _, _, 11133, 12139, _,
+  _, _, 12018, 12490, _,
+  _, _, 12490, 12560, _,
+  _, _, 12453, 12611, _,
+  _, _, 12181, 12597, _,
+  _, _, 12227, 12611, _,
+  _, _, 12299, 12596, _,
+  _, _, 11836, 12331, _,
+  _, _, 11596, 12314, _,
+  _, _, 11380, 12143, _,
+  _, _, 10933, 11116, _,
+  _, _, 10509, 11144, _,
+  _, _, 10899, 11514, _,
+  _, _, 11311, 12397, _,
+  _, _, 12245, 12434, _,
+  _, _, 12451, 12551, _,
+  _, _, 12491, 12578, _,
+  _, _, 12292, 12593, _,
+  _, _, 12297, 12586, _,
+  _, _, 12335, 12532, _,
+  _, _, 12132, 12445, _,
+  _, _, 11470, 12375, _,
+  _, _, 11389, 12088, _ ;
+
+ TEMP_QC =
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _ ;
+
+ TEMP_DM =
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR " ;
+
+ PSAL =
+  _, _, 17786, 24072, _,
+  _, _, 21935, 30645, _,
+  _, _, 29764, 32870, _,
+  _, _, 32946, 33353, _,
+  _, _, 33109, 33914, _,
+  _, _, 32184, 33944, _,
+  _, _, 32773, 34063, _,
+  _, _, 33136, 34009, _,
+  _, _, 31307, 33345, _,
+  _, _, 28407, 32998, _,
+  _, _, 25846, 32279, _,
+  _, _, 20923, 22704, _,
+  _, _, 16469, 23447, _,
+  _, _, 19750, 25557, _,
+  _, _, 23113, 32465, _,
+  _, _, 30942, 32545, _,
+  _, _, 32553, 33445, _,
+  _, _, 33124, 33774, _,
+  _, _, 32370, 33879, _,
+  _, _, 32604, 33862, _,
+  _, _, 32906, 33645, _,
+  _, _, 30867, 33074, _,
+  _, _, 24280, 32370, _,
+  _, _, 24045, 29867, _ ;
+
+ PSAL_QC =
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 4, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _ ;
+
+ PSAL_DM =
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR " ;
+
+ CNDC =
+  _, _, 20995, 28058, _,
+  _, _, 25412, 36326, _,
+  _, _, 34631, 38257, _,
+  _, _, 38335, 38827, _,
+  _, _, 38472, 39460, _,
+  _, _, 37264, 39478, _,
+  _, _, 37915, 39615, _,
+  _, _, 38358, 39544, _,
+  _, _, 36048, 38608, _,
+  _, _, 32828, 38231, _,
+  _, _, 30466, 36619, _,
+  _, _, 24467, 27106, _,
+  _, _, 19450, 27285, _,
+  _, _, 23177, 30601, _,
+  _, _, 28313, 37751, _,
+  _, _, 36022, 37867, _,
+  _, _, 37890, 38914, _,
+  _, _, 38523, 39283, _,
+  _, _, 37555, 39407, _,
+  _, _, 37803, 39382, _,
+  _, _, 38153, 39106, _,
+  _, _, 35843, 38429, _,
+  _, _, 28357, 37630, _,
+  _, _, 28049, 34761, _ ;
+
+ CNDC_QC =
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _,
+  _, _, 1, 1, _ ;
+
+ CNDC_DM =
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR ",
+  "  RR " ;
+}

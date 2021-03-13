@@ -27,22 +27,22 @@ def json_struct_to_nc(input_json):
     """
     Read a json file with a structure and save it in a netcdf file
     :param input_json: name of a json file with the options
-    :return:
+    :return: ncfile, name of netCDF
     """
     try:
         with open(input_json, 'r') as f:
             inputs = json.load(f, object_pairs_hook=OrderedDict)
             nc_file = inputs['nc_file']
-            json_file = inputs['json_file']
+            json_file = inputs['json_struct_file']
     except IOError:
-        sys.exit('An error occurred trying to read the file.')
+        sys.exit('json_struct_to_nc: An error occurred trying to read the file.')
     except KeyError:
-        sys.exit('An error with a key')
+        sys.exit('json_struct_to_nc: An error with a key')
     except ValueError:
-        sys.exit('Non-numeric data found in the file.')
+        sys.exit('json_struct_to_nc: Non-numeric data found in the file.')
     except Exception as err:
         print(err)
-        sys.exit(f'Error with the input {input_json}')
+        sys.exit(f'json_struct_to_nc: Error with the input {input_json}')
 
     # Read json
     with open(json_file) as f:
@@ -70,6 +70,14 @@ def json_struct_to_nc(input_json):
                 else:
                     attr_var['value'] = numpy.dtype(attr_var['type']).type(attr_var['value'])
                 nc_var.setncattr(attr_var['name'], attr_var['value'])
+
+            # Value
+            if 'value' in var:
+                #nc_var[:] = var['value']*numpy.ones(nc_var.shape, dtype=var['type'])
+                nc_var[:] = numpy.full(nc_var.shape, var['value'], dtype=var['type'])
+
+
+    return nc_file
 
 
 if __name__ == '__main__':
