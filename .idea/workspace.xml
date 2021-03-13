@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="all variables except currenmeter varialbes are included">
-      <change afterPath="$PROJECT_DIR$/mycoast/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mycoast/vector_transformations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform_nc.py" afterDir="false" />
-    </list>
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="version 1.0.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +21,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1mKmZE72f8mShMlzFfp9nvGmZwh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
