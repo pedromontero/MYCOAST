@@ -76,7 +76,6 @@ def json_struct_to_nc(input_json):
                 #nc_var[:] = var['value']*numpy.ones(nc_var.shape, dtype=var['type'])
                 nc_var[:] = numpy.full(nc_var.shape, var['value'], dtype=var['type'])
 
-
     return nc_file
 
 
