@@ -115,7 +115,7 @@ def dir_structure(root):
 
 
 def main():
-    root = os.path.join('', '../data/out/inicio')
+    root = os.path.join('', '../../data/out/inicio')
     dir_structure(root)
 
 

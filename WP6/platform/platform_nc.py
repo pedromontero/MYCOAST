@@ -4,7 +4,7 @@
 """
 **platform.py**
 
-* *Purpose:* Read data from a platform and a json structure file and create a mycoast netcdf
+* *Purpose:* Read data from a platform and a json structure file and create a common netcdf
 
 * *python version:* 3.8
 * *author:* Pedro Montero
@@ -24,9 +24,9 @@ import pandas as pd
 import netCDF4
 
 from db import consulta_pd
-from json_struct_to_nc.json_struct_to_nc import json_struct_to_nc
+from WP6.json_struct_to_nc.json_struct_to_nc import json_struct_to_nc
 
-from mycoast import uv2modtheta
+from common import uv2modtheta
 
 
 def date_range(start_date, end_date, dt):

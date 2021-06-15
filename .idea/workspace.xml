@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MYCOAST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MYCOAST.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HF_RADAR/drawmap/draw_hf_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/drawmap/draw_hf_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/out/CTD_IFREMER_MES.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/out/CTD_IFREMER_MES.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="draw_hf_map.py">
+      <change beforePath="$PROJECT_DIR$/.vs/MYCOAST/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PythonSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dir_structure/dir_structure.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/dir_structure/dir_structure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/json_struct_to_nc/json_struct_to_nc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoast/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoast/vector_transformations.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/vector_transformations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/nc_struct_to_json/nc_struct_to_json.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/nc_struct_to_json/nc_struct_to_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/datos/db_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/datos/db_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/datos/db_data_dev1.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/datos/db_data_dev1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/datos/json_struct_to_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/datos/json_struct_to_nc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/platform_nc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/platform_nc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +375,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620245824759</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="draw_hf_map.py">
+      <created>1623732986835</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1623732986835</updated>
+    </task>
+    <task id="LOCAL-00024" summary="draw_hf_map.py">
+      <created>1623733127396</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1623733127396</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -401,6 +427,7 @@
     <MESSAGE value="version 1.0.0" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="initial commit HFRADAR" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit HFRADAR" />
+    <MESSAGE value="draw_hf_map.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="draw_hf_map.py" />
   </component>
 </project>
