@@ -71,7 +71,7 @@ def drawcurrents(lats, lons, ust, vst, mod, total, title, time, boundary_box):
     cbar.ax.tick_params(labelsize=9)
     cbar.set_label('sea water velocity (m/s)', fontsize=9)
 
-    name_fig = 'imaxe.png'
+    name_fig = 'imaxe1.png'
     fig.savefig(name_fig, dpi=300, facecolor='w', edgecolor='w', format='png',
                 transparent=False, pad_inches=0.1, bbox_inches='tight')
 
@@ -119,8 +119,8 @@ def getvar_longname(f, nome_longs):
 
 
 def main():
-    file_in = r'http://150.145.136.27:8080/thredds/dodsC/Ibiza_NRT212/2020/2020_02/2020_02_12/HFR-Ibiza-Total_2020_02_12_1700.nc'
-    # file_in = '..\HFR-Galicia-VILA_2021_04_26_0600_node.nc'
+    #file_in = r'http://150.145.136.27:8080/thredds/dodsC/Ibiza_NRT212/2020/2020_02/2020_02_12/HFR-Ibiza-Total_2020_02_12_1700.nc'
+    file_in = '..\HFR-Galicia-VILA_2021_04_26_0600.nc'
     print('vou a ler {0}'.format(file_in))
 
     f = netCDF4.Dataset(file_in)
