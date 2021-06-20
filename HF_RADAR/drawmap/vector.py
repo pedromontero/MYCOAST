@@ -1,6 +1,5 @@
 from math import pi, sqrt, atan2, sin, cos
 
-
 class Vector:
     def __init__(self, u=None, v=None, mod=None, theta=None, wind=False):
         self.wind = wind
@@ -20,10 +19,6 @@ class Vector:
         """
         From u,v velocity components return module and bearing of current
 
-        :param u: x-component of a current
-        :param v: y- component of a current
-        :param wind: for current or wind(True)
-        :return: module, direction
         """
         if self.wind:
             coef = -1
@@ -38,10 +33,6 @@ class Vector:
         """
         From module, bearing of a current return u,v velocity components
 
-        :param mod: module of a current
-        :param theta: angle of a current
-        :param wind: for current or wind(True)
-        :return: u,v components of the current
         """
         if self.wind:
             coef = -1
