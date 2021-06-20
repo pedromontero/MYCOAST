@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="draw_hf_map.py">
-      <change beforePath="$PROJECT_DIR$/.vs/MYCOAST/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PythonSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dir_structure/dir_structure.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/dir_structure/dir_structure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/json_struct_to_nc/json_struct_to_nc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json_struct_to_nc/json_struct_to_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycoast/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycoast/vector_transformations.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/vector_transformations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/nc_struct_to_json/nc_struct_to_json.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/nc_struct_to_json/nc_struct_to_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/datos/db_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/datos/db_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/datos/db_data_dev1.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/datos/db_data_dev1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/datos/json_struct_to_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/datos/json_struct_to_nc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform_nc.json" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/platform_nc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/platform/platform_nc.py" afterDir="false" />
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="refactor">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HF_RADAR/PRIO.json" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/PRIO.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HF_RADAR/SILL.json" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/SILL.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HF_RADAR/VILA.json" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/VILA.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HF_RADAR/drawmap/draw_hf_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/drawmap/draw_hf_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HF_RADAR/lectura_ruv.py" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/lectura_ruv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HF_RADAR/variables.json" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/variables.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WP6/json_struct_to_nc/json_struct_to_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +52,14 @@
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\json_struct_to_nc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pedro\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\HF_RADAR\codar2nc" />
+      <recent name="C:\Users\Pedro\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\HF_RADAR\data" />
+      <recent name="C:\Users\Pedro\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\WP6" />
       <recent name="C:\Users\Pedro\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\HF_RADAR" />
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\data\in" />
-      <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\data\out" />
-      <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\dir_structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.draw_hf_map">
+  <component name="RunManager" selected="Python.platform_nc">
     <configuration name="BoundaryBox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,7 +156,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HF_RADAR/lectura_ruv.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Pedro\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\HF_RADAR\codar2nc\lectura_ruv.py" />
       <option name="PARAMETERS" value="-f RDLm_VILA_2021_04_26_0800.ruv" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,19 +165,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="nc_struct_to_json" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="platform_nc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nc_struct_to_json" />
+      <option name="SDK_HOME" value="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\venv38\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WP6/platform" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nc_struct_to_json/nc_struct_to_json.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WP6/platform/platform_nc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,15 +191,15 @@
       <item itemvalue="Python.draw_hf_map" />
       <item itemvalue="Python.drawmap" />
       <item itemvalue="Python.lectura_ruv" />
-      <item itemvalue="Python.nc_struct_to_json" />
+      <item itemvalue="Python.platform_nc" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.platform_nc" />
         <item itemvalue="Python.draw_hf_map" />
         <item itemvalue="Python.BoundaryBox" />
         <item itemvalue="Python.lectura_ruv" />
         <item itemvalue="Python.drawmap" />
-        <item itemvalue="Python.nc_struct_to_json" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623733127396</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="refactor">
+      <created>1623733513712</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1623733513712</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,6 +426,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="initial commit HFRADAR" />
     <MESSAGE value="draw_hf_map.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="draw_hf_map.py" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
 </project>

@@ -44,7 +44,7 @@ def drawcurrents(lats, lons, ust, vst, mod, total, title, time, boundary_box):
         if isinstance(child, spn.Spine):
             child.set_color('#eeeeee')
 
-    dx= 0.1
+    dx = 0.1
     middle_lon = boundary_box.middle_lon()
     middle_lat = boundary_box.middle_lat()
     m = Basemap(llcrnrlon=boundary_box.lon_min-dx,
@@ -120,7 +120,7 @@ def getvar_longname(f, nome_longs):
 
 def main():
     #file_in = r'http://150.145.136.27:8080/thredds/dodsC/Ibiza_NRT212/2020/2020_02/2020_02_12/HFR-Ibiza-Total_2020_02_12_1700.nc'
-    file_in = '..\HFR-Galicia-VILA_2021_04_26_0600.nc'
+    file_in = '../codar2nc/data/HFR-Galicia-VILA_2021_04_26_0600.nc'
     print('vou a ler {0}'.format(file_in))
 
     f = netCDF4.Dataset(file_in)
