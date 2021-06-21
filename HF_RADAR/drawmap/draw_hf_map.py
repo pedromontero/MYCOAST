@@ -21,6 +21,7 @@ draw_hf_map.py
 import netCDF4
 import numpy as np
 import datetime
+from vector import NumpyVector
 
 
 from math import  pi
@@ -28,7 +29,7 @@ from math import  pi
 from BoundaryBox import BoundaryBox
 
 
-def drawcurrents(lats, lons, ust, vst, mod, total, title, time, boundary_box):
+def drawcurrents(vectors, total, title, time, boundary_box):
     """
 
     :return:
@@ -57,14 +58,12 @@ def drawcurrents(lats, lons, ust, vst, mod, total, title, time, boundary_box):
     m.fillcontinents(color='grey', lake_color='aqua')
 
     if total:
-        lon, lat = np.meshgrid(lons, lats)
-        x, y = m(lon, lat)
+        x, y = m(np.meshgrid(vectors.x, vectors.y))
     else:
-        x, y = m(lons, lats)
-
+        x, y = m(vectors.x, vectors.y)
 
     # draw coloured vectors.
-    cs = m.quiver(x, y, ust, vst, mod, clim=[0, 0.7], scale=5)
+    cs = m.quiver(x, y, vectors.u, vectors.v, vectors.mod, clim=[0, 0.7], scale=5)
 
     # add colorbar.
     cbar = m.colorbar(cs, location='bottom', pad="5%")
@@ -172,14 +171,12 @@ def main():
     water_v = v_in[:]
     water_u = water_u[0][0]
     water_v = water_v[0][0]
-    print(water_u.size, water_v.size, lon_in.size)
-
-    mod = pow((pow(water_u, 2) + pow(water_v, 2)), .5)
-    dir = (180 * np.arctan2(water_u, water_v)) / pi
+    vectors = NumpyVector(water_u, water_v)
+    vectors.set_point(lon_in, lat_in)
 
     f.close()
 
-    drawcurrents(lat_in, lon_in, water_u, water_v, mod, total, 'title', tempo, boundary_box)
+    drawcurrents(vectors, total, 'title', tempo, boundary_box)
 
 
 
