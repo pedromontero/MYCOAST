@@ -62,7 +62,7 @@ def drawcurrents(vectors, coordinates_1d, title, time, boundary_box):
     # draw coloured vectors.
     cs = m.quiver(x, y, vectors.u, vectors.v, vectors.mod, clim=[0, 0.7], scale=5)
 
-    # add colorbar.
+    # add color bar.
     cbar = m.colorbar(cs, location='bottom', pad="5%")
     cbar.ax.tick_params(labelsize=9)
     cbar.set_label('sea water velocity (m/s)', fontsize=9)
