@@ -22,14 +22,10 @@ import netCDF4
 import numpy as np
 import datetime
 from vector import NumpyVector
-
-
-from math import  pi
-
 from BoundaryBox import BoundaryBox
 
 
-def drawcurrents(vectors, total, title, time, boundary_box):
+def drawcurrents(vectors, coordinates_1d, title, time, boundary_box):
     """
 
     :return:
@@ -57,7 +53,7 @@ def drawcurrents(vectors, total, title, time, boundary_box):
     m.drawcoastlines()
     m.fillcontinents(color='grey', lake_color='aqua')
 
-    if total:
+    if coordinates_1d:
         lon, lat = np.meshgrid(vectors.x, vectors.y)
         x, y = m(lon, lat)
     else:
@@ -113,8 +109,8 @@ def getvar_longname(f, nome_longs):
 
 
 def main():
-    file_in = r'http://150.145.136.27:8080/thredds/dodsC/Ibiza_NRT212/2020/2020_02/2020_02_12/HFR-Ibiza-Total_2020_02_12_1700.nc'
-    #file_in = '../codar2nc/data/HFR-Galicia-VILA_2021_04_26_0600.nc'
+    #file_in = r'http://150.145.136.27:8080/thredds/dodsC/Ibiza_NRT212/2020/2020_02/2020_02_12/HFR-Ibiza-Total_2020_02_12_1700.nc'
+    file_in = '../codar2nc/data/HFR-Galicia-VILA_2021_04_26_0600.nc'
     print('vou a ler {0}'.format(file_in))
 
     f = netCDF4.Dataset(file_in)

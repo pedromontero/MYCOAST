@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="Finished vector.py NumpyVector class created. Included in draw_hf_map">
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="bug fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HF_RADAR/drawmap/draw_hf_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/drawmap/draw_hf_map.py" afterDir="false" />
     </list>
@@ -401,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624311931615</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="bug fixed">
+      <created>1624312483512</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1624312483512</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,7 +424,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="json_struct_to_nc.py can write dimensions" />
     <MESSAGE value="write dimensions of a variable as a raw list" />
     <MESSAGE value="write element type of a ndarray as 'type_element'" />
     <MESSAGE value="fill_value solved" />
@@ -442,6 +448,7 @@
     <MESSAGE value="vector.py init from u,v and mod, theta" />
     <MESSAGE value="refactor" />
     <MESSAGE value="Finished vector.py NumpyVector class created. Included in draw_hf_map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished vector.py NumpyVector class created. Included in draw_hf_map" />
+    <MESSAGE value="bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
   </component>
 </project>
