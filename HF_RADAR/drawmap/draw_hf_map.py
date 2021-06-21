@@ -58,7 +58,8 @@ def drawcurrents(vectors, total, title, time, boundary_box):
     m.fillcontinents(color='grey', lake_color='aqua')
 
     if total:
-        x, y = m(np.meshgrid(vectors.x, vectors.y))
+        lon, lat = np.meshgrid(vectors.x, vectors.y)
+        x, y = m(lon, lat)
     else:
         x, y = m(vectors.x, vectors.y)
 
@@ -78,8 +79,6 @@ def drawcurrents(vectors, total, title, time, boundary_box):
     plt.close('all')
 
     return
-
-
 
 
 def unix_time(dt):
@@ -113,13 +112,9 @@ def getvar_longname(f, nome_longs):
     print('long_name = {0} not found'.format(nome_long))
 
 
-
-
-
-
 def main():
-    #file_in = r'http://150.145.136.27:8080/thredds/dodsC/Ibiza_NRT212/2020/2020_02/2020_02_12/HFR-Ibiza-Total_2020_02_12_1700.nc'
-    file_in = '../codar2nc/data/HFR-Galicia-VILA_2021_04_26_0600.nc'
+    file_in = r'http://150.145.136.27:8080/thredds/dodsC/Ibiza_NRT212/2020/2020_02/2020_02_12/HFR-Ibiza-Total_2020_02_12_1700.nc'
+    #file_in = '../codar2nc/data/HFR-Galicia-VILA_2021_04_26_0600.nc'
     print('vou a ler {0}'.format(file_in))
 
     f = netCDF4.Dataset(file_in)
@@ -160,8 +155,7 @@ def main():
                                    'northward_sea_water_velocity'])[:]
     # if v_in is None:
     # v_in = getvar_standardname(f, 'northward_sea_water_velocity')[:]
-    print(v_in.shape)
-    print(lat_in.shape)
+
 
     tempo = netCDF4.num2date(times_in[:], units=times_in.units)[0]
     times = unix_time(tempo)

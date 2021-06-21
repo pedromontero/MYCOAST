@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="refactor">
+    <list default="true" id="2a7fb757-712b-4ac7-90c9-76c9ce3b1069" name="Default Changelist" comment="Finished vector.py NumpyVector class created. Included in draw_hf_map">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HF_RADAR/PRIO.json" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/PRIO.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HF_RADAR/SILL.json" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/SILL.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HF_RADAR/VILA.json" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/VILA.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HF_RADAR/drawmap/draw_hf_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/drawmap/draw_hf_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HF_RADAR/lectura_ruv.py" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/lectura_ruv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HF_RADAR/variables.json" beforeDir="false" afterPath="$PROJECT_DIR$/HF_RADAR/codar2nc/variables.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WP6/json_struct_to_nc/json_struct_to_nc.py" beforeDir="false" afterPath="$PROJECT_DIR$/WP6/json_struct_to_nc/json_struct_to_nc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +24,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1mKmZE72f8mShMlzFfp9nvGmZwh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -59,7 +52,7 @@
       <recent name="C:\Users\UsrXModel1\OneDrive - INTECMAR\02_TRABALLO\02_PYTHON\UMOPY\MYCOAST\data\in" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.platform_nc">
+  <component name="RunManager" selected="Python.draw_hf_map">
     <configuration name="BoundaryBox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MYCOAST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,8 +188,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.platform_nc" />
         <item itemvalue="Python.draw_hf_map" />
+        <item itemvalue="Python.platform_nc" />
         <item itemvalue="Python.BoundaryBox" />
         <item itemvalue="Python.lectura_ruv" />
         <item itemvalue="Python.drawmap" />
@@ -387,7 +380,28 @@
       <option name="project" value="LOCAL" />
       <updated>1623733513712</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="vector.py init from u,v and mod, theta">
+      <created>1624217850088</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1624217850088</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor">
+      <created>1624218389190</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1624218389190</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Finished vector.py NumpyVector class created. Included in draw_hf_map">
+      <created>1624311931615</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1624311931615</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,7 +417,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Project MyCOAST starts with dir_structure" />
     <MESSAGE value="json_struct_to_nc.py can write dimensions" />
     <MESSAGE value="write dimensions of a variable as a raw list" />
     <MESSAGE value="write element type of a ndarray as 'type_element'" />
@@ -426,7 +439,9 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="initial commit HFRADAR" />
     <MESSAGE value="draw_hf_map.py" />
+    <MESSAGE value="vector.py init from u,v and mod, theta" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="Finished vector.py NumpyVector class created. Included in draw_hf_map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished vector.py NumpyVector class created. Included in draw_hf_map" />
   </component>
 </project>
