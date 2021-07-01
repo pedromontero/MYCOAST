@@ -72,4 +72,3 @@ class NumpyVector(Vector):
         mod = pow((pow(self.u, 2) + pow(self.v, 2)), .5)
         theta = np.arctan2(coef * self.u, coef * self.v) * deg2rad
         return mod, theta
-
