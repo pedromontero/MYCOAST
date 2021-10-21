@@ -21,14 +21,11 @@ draw_hf_map.py
 import netCDF4
 import numpy as np
 import datetime
-
-
-from math import  pi
-
+from vector import NumpyVector
 from BoundaryBox import BoundaryBox
 
 
-def drawcurrents(lats, lons, ust, vst, mod, total, title, time, boundary_box):
+def drawcurrents(vectors, coordinates_1d, title, time, boundary_box):
     """
 
     :return:
@@ -44,7 +41,7 @@ def drawcurrents(lats, lons, ust, vst, mod, total, title, time, boundary_box):
         if isinstance(child, spn.Spine):
             child.set_color('#eeeeee')
 
-    dx= 0.1
+    dx = 0.1
     middle_lon = boundary_box.middle_lon()
     middle_lat = boundary_box.middle_lat()
     m = Basemap(llcrnrlon=boundary_box.lon_min-dx,
@@ -56,17 +53,16 @@ def drawcurrents(lats, lons, ust, vst, mod, total, title, time, boundary_box):
     m.drawcoastlines()
     m.fillcontinents(color='grey', lake_color='aqua')
 
-    if total:
-        lon, lat = np.meshgrid(lons, lats)
+    if coordinates_1d:
+        lon, lat = np.meshgrid(vectors.x, vectors.y)
         x, y = m(lon, lat)
     else:
-        x, y = m(lons, lats)
-
+        x, y = m(vectors.x, vectors.y)
 
     # draw coloured vectors.
-    cs = m.quiver(x, y, ust, vst, mod, clim=[0, 0.7], scale=5)
+    cs = m.quiver(x, y, vectors.u, vectors.v, vectors.mod, clim=[0, 0.7], scale=5)
 
-    # add colorbar.
+    # add color bar.
     cbar = m.colorbar(cs, location='bottom', pad="5%")
     cbar.ax.tick_params(labelsize=9)
     cbar.set_label('sea water velocity (m/s)', fontsize=9)
@@ -79,8 +75,6 @@ def drawcurrents(lats, lons, ust, vst, mod, total, title, time, boundary_box):
     plt.close('all')
 
     return
-
-
 
 
 def unix_time(dt):
@@ -114,13 +108,9 @@ def getvar_longname(f, nome_longs):
     print('long_name = {0} not found'.format(nome_long))
 
 
-
-
-
-
 def main():
     #file_in = r'http://150.145.136.27:8080/thredds/dodsC/Ibiza_NRT212/2020/2020_02/2020_02_12/HFR-Ibiza-Total_2020_02_12_1700.nc'
-    file_in = '..\HFR-Galicia-VILA_2021_04_26_0600.nc'
+    file_in = '../codar2nc/data/HFR-Galicia-VILA_2021_04_26_0600.nc'
     print('vou a ler {0}'.format(file_in))
 
     f = netCDF4.Dataset(file_in)
@@ -161,8 +151,7 @@ def main():
                                    'northward_sea_water_velocity'])[:]
     # if v_in is None:
     # v_in = getvar_standardname(f, 'northward_sea_water_velocity')[:]
-    print(v_in.shape)
-    print(lat_in.shape)
+
 
     tempo = netCDF4.num2date(times_in[:], units=times_in.units)[0]
     times = unix_time(tempo)
@@ -172,14 +161,12 @@ def main():
     water_v = v_in[:]
     water_u = water_u[0][0]
     water_v = water_v[0][0]
-    print(water_u.size, water_v.size, lon_in.size)
-
-    mod = pow((pow(water_u, 2) + pow(water_v, 2)), .5)
-    dir = (180 * np.arctan2(water_u, water_v)) / pi
+    vectors = NumpyVector(water_u, water_v)
+    vectors.set_point(lon_in, lat_in)
 
     f.close()
 
-    drawcurrents(lat_in, lon_in, water_u, water_v, mod, total, 'title', tempo, boundary_box)
+    drawcurrents(vectors, total, 'title', tempo, boundary_box)
 
 
 
